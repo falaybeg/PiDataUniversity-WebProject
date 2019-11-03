@@ -1,0 +1,5 @@
+C:\Users\Admin\Desktop\PidataProje\PiData.Domain\bin\Debug\NTier.Domain.dll
+C:\Users\Admin\Desktop\PidataProje\PiData.Domain\bin\Debug\NTier.Domain.pdb
+C:\Users\Admin\Desktop\PidataProje\PiData.Domain\obj\Debug\PiData.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\PidataProje\PiData.Domain\obj\Debug\NTier.Domain.dll
+C:\Users\Admin\Desktop\PidataProje\PiData.Domain\obj\Debug\NTier.Domain.pdb

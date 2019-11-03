@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\Asp.Net-MVC-NTier-Architecture\NTier.Domain\bin\Debug\NTier.Domain.dll
+C:\Users\Admin\Desktop\Asp.Net-MVC-NTier-Architecture\NTier.Domain\bin\Debug\NTier.Domain.pdb
+C:\Users\Admin\Desktop\Asp.Net-MVC-NTier-Architecture\NTier.Domain\obj\Debug\NTierApp.Model.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Asp.Net-MVC-NTier-Architecture\NTier.Domain\obj\Debug\NTierApp.Model.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Asp.Net-MVC-NTier-Architecture\NTier.Domain\obj\Debug\NTier.Domain.dll
+C:\Users\Admin\Desktop\Asp.Net-MVC-NTier-Architecture\NTier.Domain\obj\Debug\NTier.Domain.pdb
