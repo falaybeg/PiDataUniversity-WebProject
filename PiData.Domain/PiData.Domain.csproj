@@ -41,7 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.cs" />
+    <Compile Include="Faculty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teacher.cs" />
+    <Compile Include="Universite.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
