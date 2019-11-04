@@ -276,6 +276,7 @@
     <Content Include="Content\fonts\icomoon\fonts\icomoon.svg" />
     <Content Include="Content\fonts\icomoon\Read Me.txt" />
     <Content Include="Content\fonts\icomoon\style.css" />
+    <Content Include="Content\images\administrative.png" />
     <Content Include="Content\images\bg_1.jpg" />
     <Content Include="Content\images\blog_1.jpg" />
     <Content Include="Content\images\blog_2.jpg" />
@@ -287,12 +288,16 @@
     <Content Include="Content\images\course_5.jpg" />
     <Content Include="Content\images\course_6.jpg" />
     <Content Include="Content\images\hero_1.jpg" />
-    <Content Include="Content\images\logo.jpg" />
+    <Content Include="Content\images\history.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo2.jpg" />
+    <Content Include="Content\images\mission.jpg" />
     <Content Include="Content\images\person_1.jpg" />
     <Content Include="Content\images\person_2.jpg" />
     <Content Include="Content\images\person_3.jpg" />
     <Content Include="Content\images\person_4.jpg" />
+    <Content Include="Content\images\rector.jpg" />
+    <Content Include="Content\images\vision.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -474,6 +479,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Repo\Index.cshtml" />
+    <Content Include="Views\Home\RectorMessage.cshtml" />
+    <Content Include="Views\Home\History.cshtml" />
+    <Content Include="Views\Home\MissionVision.cshtml" />
+    <Content Include="Views\Home\AdministrativeUnits.cshtml" />
+    <Content Include="Views\Home\AcademicCalendar.cshtml" />
+    <Content Include="Views\Home\Faculties.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

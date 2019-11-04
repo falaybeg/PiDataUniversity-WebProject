@@ -67,26 +67,26 @@
                     <nav class="site-navigation position-relative text-right" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li class="active">
-                                <a href="index.html" class="nav-link text-left">Ana Sayfa</a>
+                                <a href="@Url.Action("Index","Home")" class="nav-link text-left">Ana Sayfa</a>
                             </li>
                             <li class="has-children">
-                                <a href="about.html" class="nav-link text-left">Üniversitemiz</a>
+                                <a href="#" class="nav-link text-left">Üniversitemiz</a>
                                 <ul class="dropdown">
-                                    <li><a href="teachers.html">Rektör Mesajı</a></li>
-                                    <li><a href="about.html">Tarihçe</a></li>
-                                    <li><a href="about.html">Misyon ve Vizyon</a></li>
-                                    <li><a href="about.html">İdari Birimler</a></li>
+                                    <li><a href="@Url.Action("RectorMessage","Home")">Rektör Mesajı</a></li>
+                                    <li><a href="@Url.Action("History","Home")">Tarihçe</a></li>
+                                    <li><a href="@Url.Action("MissionVision","Home")">Misyon ve Vizyon</a></li>
+                                    <li><a href="@Url.Action("AdministrativeUnits","Home")">İdari Birimler</a></li>
                                 </ul>
                             </li>
                             <li class="has-children">
                                 <a href="about.html" class="nav-link text-left">Akademik</a>
                                 <ul class="dropdown">
-                                    <li><a href="teachers.html">Akademik Takvim</a></li>
-                                    <li><a href="about.html">Fakülteler</a></li>
+                                    <li><a href="@Url.Action("AcademicCalendar","Home")">Akademik Takvim</a></li>
+                                    <li><a href="@Url.Action("Faculties","Home")">Fakülteler</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="contact.html" class="nav-link text-left">İletişim</a>
+                                <a href="@Url.Action("Contact","Home")" class="nav-link text-left">İletişim</a>
                             </li>
                         </ul>                                                                                                                                                                                                                                                                                          </ul>
                     </nav>

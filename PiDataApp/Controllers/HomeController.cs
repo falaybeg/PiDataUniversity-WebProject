@@ -13,10 +13,34 @@ namespace PiDataApp.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult RectorMessage()
         {
-            ViewBag.Message = "Your application description page.";
 
+            return View();
+        }
+
+        public ActionResult History()
+        {
+            return View();
+        }
+
+        public ActionResult MissionVision()
+        {
+            return View();
+        }
+
+        public ActionResult AdministrativeUnits()
+        {
+            return View();
+        }
+
+        public ActionResult AcademicCalendar()
+        {
+            return View();
+        }
+
+        public ActionResult Faculties()
+        {
             return View();
         }
 
