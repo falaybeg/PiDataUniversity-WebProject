@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="~/Content/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="~/Content/fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="~/Content/css/aos.css">
-    <link rel="stylesheet" href="~/Content/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/Content/css/jquery.mb.YTPlayer.min.css" media="all" type="text/css">
     <link rel="stylesheet" href="~/Content/css/style.css">
 
 
@@ -49,8 +49,9 @@
                     <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@pidatauniversity.com</a>
                 </div>
                 <div class="col-lg-3 text-right">
-                    <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
-                    <a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
+                    <a href="@Url.Action("Login","UserManagement", new { Area="Admin" })" class="small mr-3" style="font-size:20px;"><span class="icon-unlock-alt"></span> Log In</a>
+                    @*<a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span> Register</a>
+                    *@
                 </div>
             </div>
         </div>
@@ -88,7 +89,7 @@
                             <li>
                                 <a href="@Url.Action("Contact","Home")" class="nav-link text-left">İletişim</a>
                             </li>
-                        </ul>                                                                                                                                                                                                                                                                                          </ul>
+                        </ul> 
                     </nav>
                 </div>
                 <div class="ml-auto">

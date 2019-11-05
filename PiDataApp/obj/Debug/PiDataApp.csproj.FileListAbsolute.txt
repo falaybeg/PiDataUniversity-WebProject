@@ -1,3 +1,10 @@
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\VBCSCompiler.exe
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\ApplicationInsights.config
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\NTierApp.dll.config
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\NTierApp.dll
@@ -9,18 +16,13 @@ C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\csi.exe
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\csi.exe.config
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\csi.rsp
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.AppContext.dll
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Console.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Diagnostics.Process.dll
@@ -30,7 +32,6 @@ C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.I
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Security.Claims.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -48,7 +49,6 @@ C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\System.X
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\vbc.exe
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\vbc.exe.config
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\vbc.rsp
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\VBCSCompiler.exe
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\Antlr3.Runtime.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiDataApp\bin\AutoMapper.dll
