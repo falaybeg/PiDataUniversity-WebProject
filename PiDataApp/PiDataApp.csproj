@@ -234,7 +234,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\DepartmentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DepartmentInfoController.cs" />
     <Compile Include="Areas\Admin\Controllers\FacultyInfoController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\UniversityInfoController.cs" />
@@ -1829,6 +1829,12 @@
     <Content Include="Areas\Admin\Views\HomeAdmin\Login.cshtml" />
     <Content Include="Areas\Admin\Views\UserManagement\Login.cshtml" />
     <Content Include="Areas\Admin\Views\UserManagement\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityInfo\AddUniversityInfo.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityInfo\ListUniversityInfo.cshtml" />
+    <Content Include="Areas\Admin\Views\FacultyInfo\AddFacultyInfo.cshtml" />
+    <Content Include="Areas\Admin\Views\FacultyInfo\ListFacultyInfo.cshtml" />
+    <Content Include="Areas\Admin\Views\DepartmentInfo\AddDepartmentInfo.cshtml" />
+    <Content Include="Areas\Admin\Views\DepartmentInfo\ListDepartmentInfo.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1903,9 +1909,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\Department\" />
-    <Folder Include="Areas\Admin\Views\FacultyInfo\" />
-    <Folder Include="Areas\Admin\Views\UniversityInfo\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

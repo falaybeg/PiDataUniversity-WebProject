@@ -4,12 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace NTierApp.Areas.Admin.Controllers
+namespace PiDataApp.Areas.Admin.Controllers
 {
     public class FacultyInfoController : Controller
     {
-        // GET: Admin/FacultyInfo
-        public ActionResult Index()
+        public ActionResult AddFacultyInfo()
+        {
+            return View();
+        }
+
+        public ActionResult ListFacultyInfo()
         {
             return View();
         }
