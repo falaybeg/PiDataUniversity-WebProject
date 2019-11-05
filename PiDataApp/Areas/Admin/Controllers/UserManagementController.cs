@@ -49,7 +49,6 @@ namespace PiDataApp.Areas.Admin.Controllers
             return View();
         }
 
-        [Authorize]
         public ActionResult MyAccount()
         {
             return View();

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NTier.Domain.Model
+namespace PiData.Domain.Model
 {
     public class Course
     {
@@ -14,6 +14,7 @@ namespace NTier.Domain.Model
         public string Name { get; set; }
         public string Description { get; set; }
         public int AKTS { get; set; }
+        public DateTime CreatedTime { get; set; }
         public int DepartmentId { get; set; }
 
         public virtual DepartmentInfo DepartmentInfo { get; set; }

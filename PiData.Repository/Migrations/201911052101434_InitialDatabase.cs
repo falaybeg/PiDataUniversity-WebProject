@@ -78,6 +78,7 @@ namespace NtierApp.Repository.Migrations
                         Name = c.String(),
                         Description = c.String(),
                         AKTS = c.Int(nullable: false),
+                        CreatedTime = c.DateTime(nullable: false),
                         DepartmentId = c.Int(nullable: false),
                         DepartmentInfo_Id = c.Int(),
                     })
@@ -212,6 +213,7 @@ namespace NtierApp.Repository.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
+                        IdentityNumber = c.String(),
                         FirstName = c.String(),
                         LastName = c.String(),
                         Gender = c.String(),
@@ -293,6 +295,8 @@ namespace NtierApp.Repository.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         StudentId = c.Int(nullable: false),
                         CourseId = c.Int(nullable: false),
+                        MidTermPoint = c.Int(nullable: false),
+                        FinalPoint = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Courses", t => t.CourseId, cascadeDelete: true)

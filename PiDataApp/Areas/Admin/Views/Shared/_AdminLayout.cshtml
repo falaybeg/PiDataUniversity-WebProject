@@ -36,43 +36,50 @@
                             <ul role="menu" class="dropdown-menu">
                                 <li>
                                     <div class="user-info">
-                                        <div class="user-name">@User.Identity.Name</div>
+                                        <div class="user-name">@User.Identity.Name Username</div>
                                         <div class="user-position online">Online</div>
                                     </div>
                                 </li>
-                                <li><a href="@Url.Action("MyAccount","UserManagement")"><span class="icon mdi mdi-card"></span>My Account</a></li>
+                                <li><a href="@Url.Action("MyAccount","UserManagement", new { Area = "Admin"})"><span class="icon mdi mdi-card"></span>Profilim</a></li>
                                 <li><a href="#" id="logout"><span class="icon mdi mdi-power"></span>Log Out</a></li>
                             </ul>
                         </li>
                     </ul>
+
                     <div class="page-title" style="font-size: 23px">
                         <span> <b>University Management System</b></span>
                         &nbsp;
-                        @Html.ActionLink("  API", "Index", "Help", new { area = "" }, null)
+                        @*
+        @Html.ActionLink("  API", "Index", "Help", new { area = "" }, null)
+                        *@
+
                     </div>
 
-                    <ul class="nav navbar-nav navbar-right be-icons-nav">
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-apps"></span></a>
-                            <ul class="dropdown-menu be-connections">
-                                <li>
-                                    <div class="list">
-                                        <div class="content">
-                                            <div class="row">
-                                                <div class="col-xs-4"><a href="https://www.facebook.com/" class="connection-item"><img src="~/Content/assets/img/facebook.png" alt="Github"><span>Facebook</span></a></div>
-                                                <div class="col-xs-4"><a href="https://twitter.com/?lang=tr" class="connection-item"><img src="~/Content/assets/img/twitter.jpg" alt="Bitbucket"><span>Twitter</span></a></div>
-                                                <div class="col-xs-4"><a href="https://www.dropbox.com" class="connection-item"><img src="~/Content/assets/img/dropbox.png" alt="Dropbox"><span>DropBox</span></a></div>
+
+
+
+                        <ul class="nav navbar-nav navbar-right be-icons-nav">
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle"><span class="icon mdi mdi-apps"></span></a>
+                                <ul class="dropdown-menu be-connections">
+                                    <li>
+                                        <div class="list">
+                                            <div class="content">
+                                                <div class="row">
+                                                    <div class="col-xs-4"><a href="https://www.facebook.com/" class="connection-item"><img src="~/Content/assets/img/facebook.png" alt="Github"><span>Facebook</span></a></div>
+                                                    <div class="col-xs-4"><a href="https://twitter.com/?lang=tr" class="connection-item"><img src="~/Content/assets/img/twitter.jpg" alt="Bitbucket"><span>Twitter</span></a></div>
+                                                    <div class="col-xs-4"><a href="https://www.dropbox.com" class="connection-item"><img src="~/Content/assets/img/dropbox.png" alt="Dropbox"><span>DropBox</span></a></div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right be-user-nav"></ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right be-user-nav"></ul>
 
-                </div>
+                    </div>
             </div>
         </nav>
         <div class="be-left-sidebar" style="width:250px">
@@ -84,7 +91,7 @@
                             <ul class="sidebar-elements">
                                 <li class="divider">Menu</li>
                                 <li class="active">
-                                    <a href="@Url.Action("Index","HomeAdmin",new{ Area = "Admin"})"><i class="icon mdi mdi-home"></i><span>Main Page</span></a>
+                                    <a href="@Url.Action("Index","HomeAdmin",new{ Area = "Admin"})"><i class="icon mdi mdi-home"></i><span>Ana Sayfa</span></a>
                                 </li>
                                 <li class="parent">
                                     <a href="#"><i class="icon mdi mdi-n-1-square"></i><span>Üniversite Sayfa Yönetimi</span></a>
@@ -94,6 +101,9 @@
                                         </li>
                                         <li>
                                             <a href="@Url.Action("ListUniversityInfo","UniversityInfo", new { Area="Admin"})" style="font-size: 14px">Tanıtım Yönetimi</a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("AcademicCalendar","UniversityInfo", new { Area="Admin"})" style="font-size: 14px">Akademik Takvim</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -124,10 +134,10 @@
                                     <a href="#"><i class="icon mdi mdi-book"></i><span>Ders Yönetimi</span></a>
                                     <ul class="sub-menu">
                                         <li>
-                                            <a href="@Url.Action("AddProduct","Product")" style="font-size: 14px">Yeni Ders</a>
+                                            <a href="@Url.Action("AddCourse","Course", new { Area = "Admin"})" style="font-size: 14px">Yeni Ders</a>
                                         </li>
                                         <li>
-                                            <a href="@Url.Action("ListProduct","Product")" style="font-size: 14px">Ders Yönetimi</a>
+                                            <a href="@Url.Action("ListCourse","Course", new { Area = "Admin"})" style="font-size: 14px">Ders Yönetimi</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -135,10 +145,13 @@
                                     <a href="#"><i class="icon mdi mdi-accounts"></i><span>Öğrenci Yönetimi</span></a>
                                     <ul class="sub-menu">
                                         <li>
-                                            <a href="@Url.Action("AddProduct","Product")" style="font-size: 14px">Yeni Öğrenci</a>
+                                            <a href="@Url.Action("AddStudent","Student", new { Area = "Admin"})" style="font-size: 14px">Yeni Öğrenci</a>
                                         </li>
                                         <li>
-                                            <a href="@Url.Action("ListProduct","Product")" style="font-size: 14px">Öğrenci Yönetimi</a>
+                                            <a href="@Url.Action("ListStudent","Student", new { Area = "Admin"})" style="font-size: 14px">Öğrenci Yönetimi</a>
+                                        </li>
+                                        <li>
+                                            <a href="@Url.Action("ListStudentPoint","Student", new { Area = "Admin"})" style="font-size: 14px">Öğrenci Not Yönetimi</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -146,13 +159,13 @@
                                     <a href="#"><i class="icon mdi mdi-account-add"></i><span>Personel Yönetimi</span></a>
                                     <ul class="sub-menu">
                                         <li>
-                                            <a href="@Url.Action("AddCustomer","Customer")" style="font-size: 14px">Yeni Öğretmen</a>
+                                            <a href="@Url.Action("AddTeacher","Teacher", new { Area = "Admin"})" style="font-size: 14px">Yeni Öğretmen</a>
                                         </li>
                                         <li>
-                                            <a href="@Url.Action("RoleList","Role")" style="font-size: 14px">Rol Yönetimi</a>
+                                            <a href="@Url.Action("ListTeacher","Teacher", new { Area = "Admin"})" style="font-size: 14px">Personel Yönetimi</a>
                                         </li>
                                         <li>
-                                            <a href="@Url.Action("UserList","UserManagement")" style="font-size: 14px">Personel Yönetimi</a>
+                                            <a href="@Url.Action("ListRole","RoleManagement", new { Area = "Admin"})" style="font-size: 14px">Rol Yönetimi</a>
                                         </li>
                                     </ul>
                                 </li>

@@ -12,11 +12,10 @@ C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\bin\Debug\E
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csprojAssemblyReference.cache
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.InitialDatabase.resources
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.UpdateDatabase.resources
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.CopyComplete
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.pdb
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.InitialDatabase.resources
+C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.GenerateResource.cache

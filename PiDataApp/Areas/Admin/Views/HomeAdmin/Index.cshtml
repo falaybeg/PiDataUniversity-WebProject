@@ -1,11 +1,252 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿<div class="row">
 
-<h2>Index</h2>
+    <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="widget widget-tile">
+            <div id="spark1" class="chart sparkline"></div>
+            <div class="data-info">
+                <div class="desc">Toplam Öğrenci Sayısı</div>
+                <div class="value">
+                    <span data-toggle="counter" data-end="324" class="number">500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="widget widget-tile">
+            <div id="spark2" class="chart sparkline"></div>
+            <div class="data-info">
+                <div class="desc">Toplam Öğretmen Sayısı</div>
+                <div class="value">
+                    <span data-toggle="counter" data-end="453" class="number">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="widget widget-tile">
+            <div id="spark3" class="chart sparkline"></div>
+            <div class="data-info">
+                <div class="desc">Toplam Fakülte Sayısı</div>
+                <div class="value">
+                    <span data-toggle="counter" data-end="33" class="number">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="widget widget-tile">
+            <div id="spark4" class="chart sparkline"></div>
+            <div class="data-info">
+                <div class="desc">Toplam Bölüm Sayısı</div>
+                <div class="value">
+                    <span data-toggle="counter" data-end="35">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<br />
-<br />
+<div class="row">
 
-<h2>Hosgeldinizzzzzz !</h2>
+    <div class="col-xs-12 col-md-4">
+        <div class="widget be-loading">
+            <div class="widget-head">
+                <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
+                <div class="title">En Çok Öğrencisi Olan Fakülte</div>
+            </div>
+            @*<div class="widget-chart-container">
+                    <img src="~/Content/assets/img/hdd.jpg" ">
+                </div>*@
+            <div class="chart-legend">
+                <table>
+                    <tbody>
+                        @*      @foreach (var item in Model.TopSeller)
+        {
+            <tr>
+                <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                <td>@item.ProductName</td>
+                <td class="chart-legend-value ">@item.ProductCount</td>
+            </tr>
+        }
+                        *@
+
+                        <tr>
+                            <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                            <td>asdsadasda</td>
+                            <td class="chart-legend-value ">324324</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div class="be-spinner">
+                    <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                        <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="widget be-loading">
+                <div class="widget-head">
+                    <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
+                    <div class="title">En Çok Öğrencisi Olan Bölüm</div>
+                </div>
+                @*<div class="widget-chart-container">
+                        <img src="~/Content/assets/img/iphone7.jpg" ">
+                    </div>*@
+                        <div class="chart-legend">
+                            <table>
+                                @*  @foreach (var item in Model.MostSoldCategories)
+        {
+            <tr>
+                <td class="chart-legend-color"><span data-color="top-sales-color1" style="background-color: #cacaca"></span></td>
+                <td>@item.CategoryName</td>
+                <td class="chart-legend-value">@item.CategoryCount</td>
+            </tr>
+        }
+                                *@
+                                <tr>
+                                    <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                                    <td>asdsadasda</td>
+                                    <td class="chart-legend-value ">324324</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="be-spinner">
+                            <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
+                            </svg>
+                        </div>
+</div>
+    </div>
+
+
+
+    <div class="col-xs-12 col-md-4">
+        <div class="widget be-loading">
+            <div class="widget-head">
+                <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
+                <div class="title">En Çok Öğretmen Olan Bölüm</div>
+            </div>
+            @*<div class="widget-chart-container">
+                    <img src="~/Content/assets/img/hdd.jpg" ">
+                </div>*@
+            <div class="chart-legend">
+                <table>
+                    <tbody>
+                        @* @foreach (var item in Model.MostProfitableProducts)
+        {
+            <tr>
+                <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                <td>@item.ProductName</td>
+                <td class="chart-legend-value">@String.Format("{0:0.###}", item.Profit) ₺</td>
+            </tr>
+        }
+                        *@
+                        <tr>
+                            <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                            <td>asdsadasda</td>
+                            <td class="chart-legend-value ">324324</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="be-spinner">
+                <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-default panel-table">
+            <div class="panel-heading">
+
+                <div class="title"><b>Son Kayıt Olan Öğrenciler</b></div>
+            </div>
+            <div class="panel-body table-responsive">
+                <table class="table table-striped table-borderless">
+                    <thead>
+                        <tr style="font-size:15px; background-color:#cecece">
+                            <th style="width:30%;">Öğrenci No</th>
+                            <th style="width:12%;">İsim</th>
+                            <th style="width:27%;">Soyisim</th>
+                            <th style="width:20%;">Bölüm</th>
+                            <th style="width:20%;">Tarih</th>
+                        </tr>
+                    </thead>
+                    <tbody class="no-border-x">
+
+                        @*  @foreach (var item in Model.LatesOrders)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@String.Format("{0:0.###}", item.Product.SellingPrice) ₺</td>
+                <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td class="text-muted ">@item.Product.Category.Name</td>
+            </tr>
+        }
+                        *@
+                        <tr>
+                            <td>32432424</td>
+                            <td>Name</td>
+                            <td>Surname</td>
+                            <td>Department</td>
+                            <td>11/01/2019</td>
+
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-default panel-table">
+            <div class="panel-heading">
+
+                <div class="title"><b>Son Açılan Dersler</b></div>
+            </div>
+            <div class="panel-body table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr style="font-size:15px;  background-color:#cecece;">
+                            <th style="width:30%;">Ders Kodu </th>
+                            <th style="width:25%;">Ders Adı</th>
+                            <th style="width:25%;">Bölüm</th>
+                            <th style="width:30%;">Tarih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @* @foreach (var item in Model.LatesPurchases)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@String.Format("{0:0.###}", item.Product.PurchasingPrice) ₺</td>
+                <td>@item.Quantity</td>
+                <td>@item.CreatedTime</td>
+                <td>@item.Product.Category.Name</td>
+            </tr>
+        }
+                        *@
+
+                        <tr>
+                            <td>Name</td>
+                            <td>PurchasingPrice ₺</td>
+                            <td>Quantity</td>
+                            <td>CreatedTime</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace NTierApp.Areas.Admin.Models
+namespace PiDataApp.Areas.Admin.Models
 {
     public class UserManagementViewModel
     {

@@ -18,5 +18,10 @@ namespace PiDataApp.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public ActionResult AcademicCalendar()
+        {
+            return View();
+        }
     }
 }

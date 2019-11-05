@@ -1,4 +1,4 @@
-﻿using NTier.Domain.Model;
+﻿using PiData.Domain.Model;
 using PiData.Domain.Abstract;
 using System;
 using System.Collections.Generic;

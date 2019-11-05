@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
-using NTier.Domain.Model;
 using PiData.Domain.Model;
 using System;
 using System.Collections.Generic;

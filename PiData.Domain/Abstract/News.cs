@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NTier.Domain.Abstract
+namespace PiData.Domain.Abstract
 {
     public class News
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NTier.Domain.Model
+namespace PiData.Domain.Model
 {
     public class Teacher
     {

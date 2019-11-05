@@ -63,13 +63,9 @@
     <Compile Include="Infrastucture\Contract\IBaseRepository.cs" />
     <Compile Include="Infrastucture\Contract\IUnitOfWork.cs" />
     <Compile Include="Infrastucture\UnitOfWork.cs" />
-    <Compile Include="Migrations\201911051217034_InitialDatabase.cs" />
-    <Compile Include="Migrations\201911051217034_InitialDatabase.Designer.cs">
-      <DependentUpon>201911051217034_InitialDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911051219405_UpdateDatabase.cs" />
-    <Compile Include="Migrations\201911051219405_UpdateDatabase.Designer.cs">
-      <DependentUpon>201911051219405_UpdateDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201911052101434_InitialDatabase.cs" />
+    <Compile Include="Migrations\201911052101434_InitialDatabase.Designer.cs">
+      <DependentUpon>201911052101434_InitialDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,15 +86,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911051217034_InitialDatabase.resx">
-      <DependentUpon>201911051217034_InitialDatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911051219405_UpdateDatabase.resx">
-      <DependentUpon>201911051219405_UpdateDatabase.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <EmbeddedResource Include="Migrations\201911052101434_InitialDatabase.resx">
+      <DependentUpon>201911052101434_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

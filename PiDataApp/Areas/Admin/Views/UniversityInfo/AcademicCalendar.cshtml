@@ -1,0 +1,118 @@
+﻿@*
+
+    @model IEnumerable<NTierApp.WebApp.Models.RoleViewModel>
+
+*@
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default panel-border-color panel-border-color-primary">
+            <div class="panel-heading panel-heading-divider" style="font-size: 22px"><b>Akademik Takvim</b></div>
+            <div class="panel-body">
+                <form action="#" class="form-horizontal group-border-dashed" novalidate="">
+                    <br>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label yazi"> Tarih :</label>
+                        <div class="col-sm-6">
+                            <input type="date" class="form-control parsley-error" data-parsley-id="29" id="roleName">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label yazi"> İşlem Adı :</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control parsley-error" data-parsley-id="29" id="roleName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-2 col-sm-10 ">
+                            <button type="submit" class="btn btn-space btn-success" style="font-size: 17px; width: 80px; height:38px;" id="btnSave">Kaydet</button>
+                            <button class="btn btn-space btn-default " style="height: 40px; font-size: 14px;">İptal</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" style="margin-left: 280px; margin-top: 15px;">
+                        <div class="panel panel-default panel-table">
+
+                            <div class="panel-heading" style="font-size: 22px">
+                                <b>Takvim</b><hr>
+
+
+                            </div>
+                            <div class="panel-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th width="30%" >Tarih</th>
+                                            <th >İşlemi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                        </tr>
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*
+
+    <script type="text/javascript">
+        var token = sessionStorage.getItem("accessToken");
+        var headers = {};
+        headers.Authorization = "Bearer " + token;
+
+        $(document).ready(function () {
+            if (token == null) {
+                toastr.info("Please try again after signing up!");
+                window.location.replace("/UserManagement/Login");
+            }
+        });
+
+        var Delete = function (id) {
+            $.ajax({
+                url: "/api/Roles/" + id,
+                method: "DELETE",
+                headers: headers,
+                success: function () {
+                    window.location.replace("/Role/RoleList");
+                },
+                error: function (jqXHR) {
+                    alert("Error !");
+                }
+            });
+        };
+
+        $("#btnSave").click(function () {
+            $.ajax({
+                url: "/api/Roles",
+                method: "POST",
+                headers: headers,
+                data: {
+                    RoleName: $("#roleName").val()
+                },
+                success: function () {
+                    window.location.replace("/Role/RoleList");
+
+                    //window.location.href = "/Role/RoleList";
+                },
+                error: function (jqXHR) {
+                    alert("Error !");
+                }
+            });
+        });
+
+
+    </script>
+*@
