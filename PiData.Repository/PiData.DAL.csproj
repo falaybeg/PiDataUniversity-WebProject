@@ -11,6 +11,8 @@
     <AssemblyName>NtierApp.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,20 +58,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoryRespository.cs" />
+    <Compile Include="Context\PiDataDbContext.cs" />
     <Compile Include="Infrastucture\BaseRepository.cs" />
     <Compile Include="Infrastucture\Contract\IBaseRepository.cs" />
     <Compile Include="Infrastucture\Contract\IUnitOfWork.cs" />
     <Compile Include="Infrastucture\UnitOfWork.cs" />
-    <Compile Include="Migrations\201911031017104_InitialDatabase.cs" />
-    <Compile Include="Migrations\201911031017104_InitialDatabase.Designer.cs">
-      <DependentUpon>201911031017104_InitialDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201911051217034_InitialDatabase.cs" />
+    <Compile Include="Migrations\201911051217034_InitialDatabase.Designer.cs">
+      <DependentUpon>201911051217034_InitialDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911051219405_UpdateDatabase.cs" />
+    <Compile Include="Migrations\201911051219405_UpdateDatabase.Designer.cs">
+      <DependentUpon>201911051219405_UpdateDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PiDataDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,8 +90,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911031017104_InitialDatabase.resx">
-      <DependentUpon>201911031017104_InitialDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911051217034_InitialDatabase.resx">
+      <DependentUpon>201911051217034_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911051219405_UpdateDatabase.resx">
+      <DependentUpon>201911051219405_UpdateDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

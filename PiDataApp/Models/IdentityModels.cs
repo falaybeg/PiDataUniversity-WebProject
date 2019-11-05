@@ -21,7 +21,7 @@ namespace PiDataApp.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("NTierDbContext", throwIfV1Schema: false)
+            : base("PiDataDbContext", throwIfV1Schema: false)
         {
         }
 

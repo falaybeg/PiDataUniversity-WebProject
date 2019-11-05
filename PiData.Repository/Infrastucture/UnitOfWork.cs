@@ -1,4 +1,5 @@
-﻿using PiDataApp.Repository.Infrastucture.Contract;
+﻿using PiDataApp.Repository.Context;
+using PiDataApp.Repository.Infrastucture.Contract;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

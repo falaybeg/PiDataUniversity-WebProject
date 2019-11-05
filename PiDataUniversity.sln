@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiData.Domain", "PiData.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiData.DAL", "PiData.Repository\PiData.DAL.csproj", "{DE07EDF1-333E-4B3F-86B6-09F5D9F8ABDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiData.WebApp", "PiDataApp\PiData.WebApp.csproj", "{EA6EF0C6-4CAF-48FC-BFF9-B6B8AEBD31C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiDataApp", "PiDataApp\PiDataApp.csproj", "{EA6EF0C6-4CAF-48FC-BFF9-B6B8AEBD31C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

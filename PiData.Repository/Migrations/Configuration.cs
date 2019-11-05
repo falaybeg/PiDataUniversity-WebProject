@@ -5,14 +5,14 @@ namespace NtierApp.Repository.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PiDataApp.Repository.PiDataDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<PiDataApp.Repository.Context.PiDataDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(PiDataApp.Repository.PiDataDbContext context)
+        protected override void Seed(PiDataApp.Repository.Context.PiDataDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
