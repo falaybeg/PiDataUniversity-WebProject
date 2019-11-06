@@ -17,4 +17,3 @@ C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\PiDat
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\PiData.Domain.csproj.CopyComplete
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\NTier.Domain.dll
 C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\NTier.Domain.pdb
-C:\Users\Admin\Desktop\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\PiData.Domain.csprojAssemblyReference.cache
