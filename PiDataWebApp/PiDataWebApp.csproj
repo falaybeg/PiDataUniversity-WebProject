@@ -1829,7 +1829,6 @@
     <Content Include="Areas\Admin\Views\FacultyInfo\AddFacultyInfo.cshtml" />
     <Content Include="Areas\Admin\Views\FacultyInfo\ListFacultyInfo.cshtml" />
     <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\HomeAdmin\Login.cshtml" />
     <Content Include="Areas\Admin\Views\RoleManagement\ListRole.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Student\AddStudent.cshtml" />

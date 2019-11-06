@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201911052101434_InitialDatabase.Designer.cs">
       <DependentUpon>201911052101434_InitialDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911061121232_NullableRegistered.cs" />
+    <Compile Include="Migrations\201911061121232_NullableRegistered.Designer.cs">
+      <DependentUpon>201911061121232_NullableRegistered.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -91,6 +95,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201911052101434_InitialDatabase.resx">
       <DependentUpon>201911052101434_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911061121232_NullableRegistered.resx">
+      <DependentUpon>201911061121232_NullableRegistered.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

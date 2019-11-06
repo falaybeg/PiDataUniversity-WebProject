@@ -328,7 +328,16 @@ namespace PiDataWebApp.Controllers.Api
                 return BadRequest(ModelState);
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser() {
+                UserName = model.Email,
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                IdentityNumber = model.IdentityNumber,
+                Gender  = model.Gender,
+                PhoneNumber = model.PhoneNumber,
+                RegisteredDate = DateTime.Now
+            };
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 

@@ -61,13 +61,13 @@
                 <table>
                     <tbody>
                         @*      @foreach (var item in Model.TopSeller)
-        {
-            <tr>
-                <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
-                <td>@item.ProductName</td>
-                <td class="chart-legend-value ">@item.ProductCount</td>
-            </tr>
-        }
+                            {
+                                <tr>
+                                    <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                                    <td>@item.ProductName</td>
+                                    <td class="chart-legend-value ">@item.ProductCount</td>
+                                </tr>
+                            }
                         *@
 
                         <tr>
@@ -76,49 +76,49 @@
                             <td class="chart-legend-value ">324324</td>
                         </tr>
                     </tbody>
-                    </table>
-                </div>
-                <div class="be-spinner">
-                    <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                        <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
-                    </svg>
-                </div>
+                </table>
+            </div>
+            <div class="be-spinner">
+                <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
+                </svg>
             </div>
         </div>
+    </div>
 
-        <div class="col-xs-12 col-md-4">
-            <div class="widget be-loading">
-                <div class="widget-head">
-                    <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
-                    <div class="title">En Çok Öğrencisi Olan Bölüm</div>
-                </div>
-                @*<div class="widget-chart-container">
-                        <img src="~/Content/assets/img/iphone7.jpg" ">
-                    </div>*@
-                        <div class="chart-legend">
-                            <table>
-                                @*  @foreach (var item in Model.MostSoldCategories)
-        {
-            <tr>
-                <td class="chart-legend-color"><span data-color="top-sales-color1" style="background-color: #cacaca"></span></td>
-                <td>@item.CategoryName</td>
-                <td class="chart-legend-value">@item.CategoryCount</td>
-            </tr>
-        }
-                                *@
-                                <tr>
-                                    <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
-                                    <td>asdsadasda</td>
-                                    <td class="chart-legend-value ">324324</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="be-spinner">
-                            <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
-                            </svg>
-                        </div>
-</div>
+    <div class="col-xs-12 col-md-4">
+        <div class="widget be-loading">
+            <div class="widget-head">
+                <div class="tools"><span class="icon mdi mdi-chevron-down"></span><span class="icon mdi mdi-refresh-sync toggle-loading"></span><span class="icon mdi mdi-close"></span></div>
+                <div class="title">En Çok Öğrencisi Olan Bölüm</div>
+            </div>
+            @*<div class="widget-chart-container">
+                    <img src="~/Content/assets/img/iphone7.jpg" ">
+                </div>*@
+            <div class="chart-legend">
+                <table>
+                    @*  @foreach (var item in Model.MostSoldCategories)
+                        {
+                            <tr>
+                                <td class="chart-legend-color"><span data-color="top-sales-color1" style="background-color: #cacaca"></span></td>
+                                <td>@item.CategoryName</td>
+                                <td class="chart-legend-value">@item.CategoryCount</td>
+                            </tr>
+                        }
+                    *@
+                    <tr>
+                        <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                        <td>asdsadasda</td>
+                        <td class="chart-legend-value ">324324</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="be-spinner">
+                <svg width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle fill="none" stroke-width="4" stroke-linecap="round" cx="33" cy="33" r="30" class="circle"></circle>
+                </svg>
+            </div>
+        </div>
     </div>
 
 
@@ -136,13 +136,13 @@
                 <table>
                     <tbody>
                         @* @foreach (var item in Model.MostProfitableProducts)
-        {
-            <tr>
-                <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
-                <td>@item.ProductName</td>
-                <td class="chart-legend-value">@String.Format("{0:0.###}", item.Profit) ₺</td>
-            </tr>
-        }
+                            {
+                                <tr>
+                                    <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
+                                    <td>@item.ProductName</td>
+                                    <td class="chart-legend-value">@String.Format("{0:0.###}", item.Profit) ₺</td>
+                                </tr>
+                            }
                         *@
                         <tr>
                             <td class="chart-legend-color"><span data-color="top-sales-color3" style="background-color: #cacaca"></span></td>
@@ -184,14 +184,14 @@
                     <tbody class="no-border-x">
 
                         @*  @foreach (var item in Model.LatesOrders)
-        {
-            <tr>
-                <td>@item.Product.Name</td>
-                <td>@String.Format("{0:0.###}", item.Product.SellingPrice) ₺</td>
-                <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
-                <td class="text-muted ">@item.Product.Category.Name</td>
-            </tr>
-        }
+                            {
+                                <tr>
+                                    <td>@item.Product.Name</td>
+                                    <td>@String.Format("{0:0.###}", item.Product.SellingPrice) ₺</td>
+                                    <td>@item.OrderDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                    <td class="text-muted ">@item.Product.Category.Name</td>
+                                </tr>
+                            }
                         *@
                         <tr>
                             <td>32432424</td>
@@ -227,15 +227,15 @@
                     </thead>
                     <tbody>
                         @* @foreach (var item in Model.LatesPurchases)
-        {
-            <tr>
-                <td>@item.Product.Name</td>
-                <td>@String.Format("{0:0.###}", item.Product.PurchasingPrice) ₺</td>
-                <td>@item.Quantity</td>
-                <td>@item.CreatedTime</td>
-                <td>@item.Product.Category.Name</td>
-            </tr>
-        }
+                            {
+                                <tr>
+                                    <td>@item.Product.Name</td>
+                                    <td>@String.Format("{0:0.###}", item.Product.PurchasingPrice) ₺</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.CreatedTime</td>
+                                    <td>@item.Product.Category.Name</td>
+                                </tr>
+                            }
                         *@
 
                         <tr>
@@ -250,3 +250,14 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        var token = sessionStorage.getItem("accessToken");
+        var headers = {};
+        headers.Authorization = "Bearer " + token;
+        if (token == null) {
+            window.location.href = "/Admin/UserManagement/Login";
+        }
+    });
+</script>

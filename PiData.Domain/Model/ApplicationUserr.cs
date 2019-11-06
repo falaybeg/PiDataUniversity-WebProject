@@ -16,7 +16,7 @@ namespace PiData.Domain.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
-        public DateTime RegisteredDate { get; set; }
+        public Nullable<DateTime> RegisteredDate { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUserr> manager, string authenticationType)
         {

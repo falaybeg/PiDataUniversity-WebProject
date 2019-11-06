@@ -49,12 +49,8 @@
 
 
 
-
-
-
-    @*
-            <script>
-              $("#btnLogin").click(function () {
+    <script>
+        $("#btnLogin").click(function () {
             $.ajax({
                 // Post username, password & the grant type to /token
                 url: '/token',
@@ -72,42 +68,36 @@
                 // EmployeeService project before running it
                 success: function (response) {
                     sessionStorage.setItem("accessToken", response.access_token);
-                    toastr.info("Redirecting to Home Page !", { timeOut: 2000 })
-                    window.location.href = '/Home/Index';
-
+                    window.location.href = '/Admin/HomeAdmin/Index';
                 },
                 error: function (jqXHR) {
-                   toastr.error("Encountered with a error !", { timeOut: 3000 })
                     $('#divErrorText').text(jqXHR.responseText);
-                    $('#divError').show('fade');
+                    window.location.href = '/Admin/UserManagement/Login';
                 }
             });
         });
 
-              $("#btnRegister").click(function () {
+        $("#btnRegister").click(function () {
 
-                    window.location.href = '/UserManagement/Register';
-                });
-            </script>
-    *@
-
-
-
-
-
-
-
-    <script>
-      $("#btnLogin").click(function () {
-            window.location.href = '/Admin/HomeAdmin/Index';
-
-    });
-
-      $("#btnRegister").click(function () {
-
-            window.location.href = '/Admin/HomeAdmin/Index';
+            window.location.href = '/UserManagement/Register';
         });
     </script>
+
+
+
+    @*
+        <script>
+          $("#btnLogin").click(function () {
+                window.location.href = '/Admin/HomeAdmin/Index';
+
+        });
+
+          $("#btnRegister").click(function () {
+
+                window.location.href = '/Admin/HomeAdmin/Index';
+            });
+        </script>
+    *@
 
 </body>
 </html>

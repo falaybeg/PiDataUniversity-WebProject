@@ -16,7 +16,7 @@
                         <label class="col-sm-3 control-label yazi"> UserName :</label>
                         <div class="col-sm-6">
                             @*<input type="text" value="@User.Identity.Name" class="form-control parsley-error" readonly style="font-weight: bold;">*@
-                            <input type="text" value="User Name" class="form-control parsley-error" readonly style="font-weight: bold;">
+                            <input type="text" value="@User.Identity.Name" class="form-control parsley-error" readonly style="font-weight: bold;">
 
                         </div>
                     </div>
@@ -50,11 +50,10 @@
     </div>
 </div>
 
-@*
 <script>
 
     $("#cancel").click(function(){
-    window.location.href = "http://localhost:5000/Home/Index";
+    window.location.href = "/Admin/HomeAdmin/Index";
     return false;
     });
 
@@ -64,8 +63,7 @@
 
     $(document).ready(function() {
       if (token == null) {
-            toastr.info( "Please try again after signin up !", { timeOut: 3000 });
-            window.location.href = "/UserManagement/Login";
+            window.location.href = "/Admin/UserManagement/Login";
       }
     });
 
@@ -81,8 +79,7 @@ var Change = function() {
     },
 
     success: function() {
-      toastr.success( "Password changed successfully !", { timeOut: 3000 });
-      window.location.href = "/Home/Index";
+      window.location.href = "/Admin/HomeAdmin/Index";
     },
     error: function(jqXHR) {
       alert("Error cannot changed !");
@@ -90,4 +87,3 @@ var Change = function() {
   });
 };
 </script>
-    *@
