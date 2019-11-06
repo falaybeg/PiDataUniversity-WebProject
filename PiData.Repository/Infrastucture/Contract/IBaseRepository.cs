@@ -9,7 +9,7 @@ namespace PiDataApp.Repository.Infrastucture.Contract
 {
     public interface IBaseRespository<T>
     {
-        T SingleOrDefault(Expression<Func<T, bool>> whereCondition);
+        T GetById(Expression<Func<T, bool>> whereCondition);
         IEnumerable<T> GetAll();
         IEnumerable<T> GetAll(Expression<Func<T, bool>> whereCondition);
         T Insert(T entity);

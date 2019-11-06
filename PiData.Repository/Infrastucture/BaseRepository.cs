@@ -21,9 +21,9 @@ namespace PiDataApp.Repository.Infrastucture
             this.dbSet = _unitOfWork.Db.Set<T>();
         }
 
-        public T SingleOrDefault(Expression<Func<T, bool>> whereCondition)
+        public T GetById(Expression<Func<T, bool>> filter)
         {
-            var dbResult = dbSet.Where(whereCondition).FirstOrDefault();
+            var dbResult = dbSet.Where(filter).SingleOrDefault();
             return dbResult;
         }
 

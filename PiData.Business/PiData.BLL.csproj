@@ -50,9 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryBusiness.cs" />
-    <Compile Include="Interface\ICategoryBusiness.cs" />
+    <Compile Include="Abstract\AbstractBusiness.cs" />
+    <Compile Include="Interface\IAcademicCalendarBusiness.cs" />
+    <Compile Include="Interface\ICourseBusiness.cs" />
+    <Compile Include="Interface\IStudentBusiness.cs" />
+    <Compile Include="Interface\IUniversityAnnouncementBusiness.cs" />
+    <Compile Include="Interface\IUniversityInfoBusiness.cs" />
+    <Compile Include="Interface\IUniversityNewsBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceBusiness\AcademicCalendarBusiness.cs" />
+    <Compile Include="ServiceBusiness\CourseBusiness.cs" />
+    <Compile Include="ServiceBusiness\StudentBusiness.cs" />
+    <Compile Include="ServiceBusiness\UniversityAnnouncementBusiness.cs" />
+    <Compile Include="ServiceBusiness\UniversityInfoBusiness.cs" />
+    <Compile Include="ServiceBusiness\UniversityNewsBusiness.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PiData.Domain\PiData.Domain.csproj">
@@ -68,6 +79,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
