@@ -193,7 +193,9 @@
     <Compile Include="Areas\Admin\Controllers\RoleManagementController.cs" />
     <Compile Include="Areas\Admin\Controllers\StudentController.cs" />
     <Compile Include="Areas\Admin\Controllers\TeacherController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UniversityAnnouncementController.cs" />
     <Compile Include="Areas\Admin\Controllers\UniversityInfoController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UniversityNewsController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserManagementController.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
@@ -1843,6 +1845,11 @@
     <Content Include="Areas\Admin\Views\UserManagement\Index.cshtml" />
     <Content Include="Areas\Admin\Views\UserManagement\Login.cshtml" />
     <Content Include="Areas\Admin\Views\UserManagement\MyAccount.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityNews\AddNews.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityNews\ListNews.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityNews\EditNews.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityAnnouncement\AddAnnouncement.cshtml" />
+    <Content Include="Areas\Admin\Views\UniversityAnnouncement\ListAnnouncement.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
