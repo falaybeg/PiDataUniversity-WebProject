@@ -13,7 +13,6 @@ C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\bin\Debug\Mic
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\bin\Debug\Microsoft.Owin.xml
-C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\PiData.Domain.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\PiData.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\PiData.Domain.csproj.CopyComplete
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Domain\obj\Debug\NTier.Domain.dll

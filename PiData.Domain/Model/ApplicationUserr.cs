@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using PiData.Domain.Model;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -16,7 +17,12 @@ namespace PiData.Domain.Model
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
+
+        [Column(TypeName = "DateTime2")]
         public Nullable<DateTime> RegisteredDate { get; set; }
+
+        [Column(TypeName = "DateTime2")]
+        public Nullable<DateTime> BirthDay { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUserr> manager, string authenticationType)
         {

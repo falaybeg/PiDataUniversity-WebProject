@@ -17,7 +17,7 @@ namespace PiDataWebApp.Models
         public string Phone { get; set; }
         public string FaxNo { get; set; }
         public string Email { get; set; }
-        public int RectorId { get; set; }
+        public string RectorId { get; set; }
         public string RectorMessage { get; set; }
 
         public  UniversityNews UniversityNews { get; set; }

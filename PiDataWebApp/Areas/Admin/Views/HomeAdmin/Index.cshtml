@@ -251,13 +251,18 @@
     </div>
 </div>
 
-<script>
-    $(document).ready(function () {
-        var token = sessionStorage.getItem("accessToken");
-        var headers = {};
-        headers.Authorization = "Bearer " + token;
-        if (token == null) {
-            window.location.href = "/Admin/UserManagement/Login";
-        }
-    });
-</script>
+
+
+@*
+
+    <script>
+        $(document).ready(function () {
+            var token = sessionStorage.getItem("accessToken");
+            var headers = {};
+            headers.Authorization = "Bearer " + token;
+            if (token == null) {
+                window.location.href = "/Admin/UserManagement/Login";
+            }
+        });
+    </script>
+*@

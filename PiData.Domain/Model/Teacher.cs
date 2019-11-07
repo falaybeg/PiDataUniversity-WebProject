@@ -13,7 +13,7 @@ namespace PiData.Domain.Model
         [Key]
         public int Id { get; set; }
         public string UserId { get; set; }
-        public int DepartmentId { get; set; }
+        public Nullable<int> DepartmentId { get; set; }
         public string Title { get; set; }
 
         public virtual DepartmentInfo DepartmentInfo { get; set; }

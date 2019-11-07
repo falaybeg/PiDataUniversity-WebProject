@@ -70,6 +70,26 @@
     <Compile Include="Migrations\201911061121232_NullableRegistered.Designer.cs">
       <DependentUpon>201911061121232_NullableRegistered.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911070722287_UpdateDatabseProject.cs" />
+    <Compile Include="Migrations\201911070722287_UpdateDatabseProject.Designer.cs">
+      <DependentUpon>201911070722287_UpdateDatabseProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070909485_UpdateDatabaseBirthDay.cs" />
+    <Compile Include="Migrations\201911070909485_UpdateDatabaseBirthDay.Designer.cs">
+      <DependentUpon>201911070909485_UpdateDatabaseBirthDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070917476_DateTimeUpdate.cs" />
+    <Compile Include="Migrations\201911070917476_DateTimeUpdate.Designer.cs">
+      <DependentUpon>201911070917476_DateTimeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070935594_StudentModelUpdate.cs" />
+    <Compile Include="Migrations\201911070935594_StudentModelUpdate.Designer.cs">
+      <DependentUpon>201911070935594_StudentModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911070937015_StudentModelUpdate1.cs" />
+    <Compile Include="Migrations\201911070937015_StudentModelUpdate1.Designer.cs">
+      <DependentUpon>201911070937015_StudentModelUpdate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AcademicCalendarRepository.cs" />
@@ -104,6 +124,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911061121232_NullableRegistered.resx">
       <DependentUpon>201911061121232_NullableRegistered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070722287_UpdateDatabseProject.resx">
+      <DependentUpon>201911070722287_UpdateDatabseProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070909485_UpdateDatabaseBirthDay.resx">
+      <DependentUpon>201911070909485_UpdateDatabaseBirthDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070917476_DateTimeUpdate.resx">
+      <DependentUpon>201911070917476_DateTimeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070935594_StudentModelUpdate.resx">
+      <DependentUpon>201911070935594_StudentModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911070937015_StudentModelUpdate1.resx">
+      <DependentUpon>201911070937015_StudentModelUpdate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PiDataApp.Repository.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,8 @@ namespace PiDataWebApp.Controllers
 {
     public class HomeController : Controller
     {
+
+
         public ActionResult Index()
         {
             return View();

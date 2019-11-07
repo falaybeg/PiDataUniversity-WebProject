@@ -13,6 +13,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using PiData.BLL.Interface;
+using PiData.Domain.Model;
 using PiDataWebApp.Models;
 using PiDataWebApp.Providers;
 using PiDataWebApp.Results;
@@ -25,16 +27,19 @@ namespace PiDataWebApp.Controllers.Api
     {
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
+        private IStudentBusiness _iStudentBusiness;
 
         public AccountController()
         {
         }
 
         public AccountController(ApplicationUserManager userManager,
-            ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
+            ISecureDataFormat<AuthenticationTicket> accessTokenFormat,
+            IStudentBusiness iStudentBusiness)
         {
             UserManager = userManager;
             AccessTokenFormat = accessTokenFormat;
+            _iStudentBusiness = iStudentBusiness;
         }
 
         public ApplicationUserManager UserManager
@@ -321,7 +326,7 @@ namespace PiDataWebApp.Controllers.Api
         // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]
-        public async Task<IHttpActionResult> Register(RegisterBindingModel model)
+        public async Task<IHttpActionResult> Register(StudentViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -329,17 +334,30 @@ namespace PiDataWebApp.Controllers.Api
             }
 
             var user = new ApplicationUser() {
-                UserName = model.Email,
-                Email = model.Email,
+                IdentityNumber = model.IdentityNumber,
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                IdentityNumber = model.IdentityNumber,
                 Gender  = model.Gender,
+                BirthDay = model.BirthDay,
                 PhoneNumber = model.PhoneNumber,
-                RegisteredDate = DateTime.Now
+                Email = model.Email,
+                UserName = model.Email,
+                RegisteredDate = model.RegisteredDate
             };
 
+            var student = new Student()
+            {
+                UserId = user.Id,
+                StudentNumber = model.StudentNumber,
+                StartedTime = model.StartedTime,
+                DepartmentId = model.DepartmentId
+            };
+            _iStudentBusiness.Insert(student);
+
+
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
+
+
 
             if (!result.Succeeded)
             {

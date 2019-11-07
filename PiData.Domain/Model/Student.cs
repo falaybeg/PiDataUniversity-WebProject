@@ -13,8 +13,8 @@ namespace PiData.Domain.Model
         public int Id { get; set; }
         public string UserId { get; set; }
         public string StudentNumber { get; set; }
-        public DateTime StartedTime { get; set; }
-        public int DepartmentId { get; set; }
+        public Nullable<DateTime> StartedTime { get; set; }
+        public Nullable<int> DepartmentId { get; set; }
 
         public virtual DepartmentInfo DepartmentInfo { get; set; }
         public virtual ApplicationUserr ApplicationUserr { get; set; }

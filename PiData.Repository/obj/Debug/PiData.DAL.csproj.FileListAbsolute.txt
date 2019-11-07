@@ -15,8 +15,13 @@ C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\bin\Debug
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.InitialDatabase.resources
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.NullableRegistered.resources
+C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.UpdateDatabseProject.resources
+C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.UpdateDatabaseBirthDay.resources
+C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.DateTimeUpdate.resources
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.GenerateResource.cache
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.CopyComplete
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.dll
 C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.pdb
+C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.StudentModelUpdate.resources
+C:\Users\Admin\Documents\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.StudentModelUpdate1.resources

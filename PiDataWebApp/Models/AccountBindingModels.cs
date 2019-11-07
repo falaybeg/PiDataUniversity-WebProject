@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Newtonsoft.Json;
 
 namespace PiDataWebApp.Models
@@ -50,9 +51,10 @@ namespace PiDataWebApp.Models
 
         [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
+        public DateTime BirthDay { get; set; }
+
+        [Column(TypeName = "DateTime2")]
         public DateTime RegisteredDate { get; set; }
-
-
     }
 
     public class RegisterExternalBindingModel

@@ -10,7 +10,7 @@ namespace PiData.Domain.Model
 {
     public class UniversityInfo : InfoAbstract
     {
-        public int RectorId { get; set; }
+        public string RectorId { get; set; }
         public string RectorMessage { get; set; }
 
         public virtual ICollection<UniversityNews> UniversityNews { get; set; }

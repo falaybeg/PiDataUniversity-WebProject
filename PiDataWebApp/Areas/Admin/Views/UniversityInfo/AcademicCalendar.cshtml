@@ -1,60 +1,62 @@
-﻿@*
+﻿@model IEnumerable<PiDataWebApp.Models.AcademicCalendarViewModel>
 
-    @model IEnumerable<NTierApp.WebApp.Models.RoleViewModel>
-
-*@
 
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default panel-border-color panel-border-color-primary">
-            <div class="panel-heading panel-heading-divider" style="font-size: 22px"><b>Akademik Takvim</b></div>
+            <div class="panel-heading panel-heading-divider" style="font-size: 22px"><b>Akademik Takvim Yönetim Ekranı</b></div>
             <div class="panel-body">
                 <form action="#" class="form-horizontal group-border-dashed" novalidate="">
                     <br>
                     <div class="form-group">
                         <label class="col-sm-3 control-label yazi"> Tarih :</label>
                         <div class="col-sm-6">
-                            <input type="date" class="form-control parsley-error" data-parsley-id="29" id="roleName">
+                            <input type="date" class="form-control parsley-error" data-parsley-id="29" id="infoDate">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label yazi"> İşlem Adı :</label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control parsley-error" data-parsley-id="29" id="roleName">
+                            <input type="text" class="form-control parsley-error" data-parsley-id="29" id="info">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-10 ">
                             <button type="submit" class="btn btn-space btn-success" style="font-size: 17px; width: 80px; height:38px;" id="btnSave">Kaydet</button>
-                            <button class="btn btn-space btn-default " style="height: 40px; font-size: 14px;">İptal</button>
+                            <button class="btn btn-space btn-default " style="height: 40px; font-size: 14px;" id="btnCancel">İptal</button>
                         </div>
                     </div>
 
                     <div class="col-sm-6" style="margin-left: 280px; margin-top: 15px;">
                         <div class="panel panel-default panel-table">
 
-                            <div class="panel-heading" style="font-size: 22px">
-                                <b>Takvim</b><hr>
-
-
-                            </div>
                             <div class="panel-body">
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th width="30%" >Tarih</th>
-                                            <th >İşlemi</th>
+                                            <th width="30%">Tarih</th>
+                                            <th>İşlemi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                        </tr>
-                                      
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>@item.InfoDate.ToString("yyyy-MM-dd")</td>
+                                                <td>@item.Info</td>
+                                                <td class="text-right">
+                                                    <div class="btn-group btn-hspace">
+                                                        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle " aria-expanded="false">İşlem<span class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                                        <ul role="menu" class="dropdown-menu pull-right">
+                                                            <li><a href="#" onclick="Delete(@item.Id)"><i class="icon mdi mdi-delete"></i><span>Sil</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        }
                                     </tbody>
-                                </table>
+                                    </table>
                             </div>
                         </div>
                     </div>
@@ -66,8 +68,6 @@
 </div>
 
 
-@*
-
     <script type="text/javascript">
         var token = sessionStorage.getItem("accessToken");
         var headers = {};
@@ -75,18 +75,17 @@
 
         $(document).ready(function () {
             if (token == null) {
-                toastr.info("Please try again after signing up!");
-                window.location.replace("/UserManagement/Login");
+                window.location.replace("/Admin/UserManagement/Login");
             }
         });
 
         var Delete = function (id) {
             $.ajax({
-                url: "/api/Roles/" + id,
+                url: "/api/AcademicCalendar/" + id,
                 method: "DELETE",
                 headers: headers,
                 success: function () {
-                    window.location.replace("/Role/RoleList");
+                    window.location.replace("/Admin/UniversityInfo/AcademicCalendar");
                 },
                 error: function (jqXHR) {
                     alert("Error !");
@@ -96,16 +95,15 @@
 
         $("#btnSave").click(function () {
             $.ajax({
-                url: "/api/Roles",
+                url: "/api/AcademicCalendar",
                 method: "POST",
                 headers: headers,
                 data: {
-                    RoleName: $("#roleName").val()
+                    InfoDate: $("#infoDate").val(),
+                    Info: $("#info").val()
                 },
                 success: function () {
-                    window.location.replace("/Role/RoleList");
-
-                    //window.location.href = "/Role/RoleList";
+                    window.location.replace("/Admin/HomeAdmin/Index");
                 },
                 error: function (jqXHR) {
                     alert("Error !");
@@ -113,6 +111,8 @@
             });
         });
 
+        $("#btnCancel").click(function () {
+              window.location.replace("/Admin/HomeAdmin/Index");
+        });
 
     </script>
-*@

@@ -45,12 +45,21 @@ namespace PiDataWebApp.Controllers.Api
             {
                Id = model.Id,
                Info = model.Info,
-               InfoDate = DateTime.Now
+               InfoDate = model.InfoDate
             };
 
 
             _academicCalendar.Insert(data);
             return Ok(data);
+        }
+
+        [HttpDelete]
+        public IHttpActionResult Delete(int id)
+        {
+            if (id > 0)
+                _academicCalendar.Delete(id);
+
+            return Ok("Deleted " + id+ " successfuly");
         }
     }
 }
