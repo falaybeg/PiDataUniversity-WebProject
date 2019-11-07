@@ -24,6 +24,10 @@ namespace PiData.Domain.Model
         [Column(TypeName = "DateTime2")]
         public Nullable<DateTime> BirthDay { get; set; }
 
+        public string StudentNumber { get; set; }
+        public Nullable<DateTime> StartedTime { get; set; }
+        public Nullable<int> DepartmentInfoId { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUserr> manager, string authenticationType)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -32,8 +36,13 @@ namespace PiData.Domain.Model
             return userIdentity;
         }
 
-        public virtual ICollection<Student> Student { get; set; }
-        public virtual ICollection<Teacher> Teacher { get; set; }
+        //public virtual ICollection<Student> Student { get; set; }
+        //public virtual ICollection<Teacher> Teacher { get; set; }
+        public virtual ICollection<DepartmentInfo> DepartmentInfo { get; set; }
+        public virtual ICollection<UniversityInfo> UniversityInfo { get; set; }
+
+        public virtual ICollection<StudentCourse> StudentCourse { get; set; }
+
 
     }
 }

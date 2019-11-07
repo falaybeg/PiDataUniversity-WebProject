@@ -10,7 +10,6 @@ namespace PiData.Domain.Model
 {
     public class Teacher
     {
-        [Key]
         public int Id { get; set; }
         public string UserId { get; set; }
         public Nullable<int> DepartmentId { get; set; }

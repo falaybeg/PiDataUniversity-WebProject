@@ -11,8 +11,6 @@ namespace PiData.Domain.Model
         public int Id { get; set; }
         public string Info { get; set; }
         public DateTime InfoDate { get; set; }
-        public int UniversityId { get; set; }
 
-        public virtual UniversityInfo UniversityInfo { get; set; }
     }
 }

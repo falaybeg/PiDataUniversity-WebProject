@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity.Owin;
 using PiDataApp;
 using PiDataApp.Repository.Context;
 using PiDataWebApp;
+using PiDataWebApp.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -55,26 +56,25 @@ namespace PiDataWebApp.Areas.Admin.Controllers
             return View();
         }
 
-        [Authorize]
         public ActionResult UserList()
         {
-            /*
-            var result = (from user in db.Users
-                          from userRole in user.Roles
-                          join role in db.Roles on userRole.RoleId equals role.Id
-                          select new UserManagementViewModel()
-                          {
-                              Id = user.Id,
-                              FirstName = user.FirstName,
-                              LastName = user.LastName,
-                              PhoneNumber = user.PhoneNumber,
-                              Email = user.Email,
-                              CardNumber = user.CardNumber,
-                              RegisteredDate = user.RegisteredDate,
-                              RoleName = role.Name
-                          }).ToList();
-*/
-            return View();
+            List<StudentViewModel> model = new List<StudentViewModel>();
+            var resu = db.Users.ToList();
+            foreach(var item in resu)
+            {
+                model.Add(new StudentViewModel
+                {
+                    IdentityNumber = item.IdentityNumber,
+                    FirstName = item.FirstName,
+                    LastName = item.LastName,
+                    StudentNumber = item.StudentNumber,
+                    BirthDay = item.BirthDay,
+                    Email = item.Email
+                });
+            }
+
+
+            return View(model);
         }
 
 

@@ -7,13 +7,13 @@ namespace NtierApp.Repository.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class StudentModelUpdate1 : IMigrationMetadata
+    public sealed partial class yeniDb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(StudentModelUpdate1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(yeniDb));
         
         string IMigrationMetadata.Id
         {
-            get { return "201911070937015_StudentModelUpdate1"; }
+            get { return "201911071829398_yeniDb"; }
         }
         
         string IMigrationMetadata.Source

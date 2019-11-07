@@ -66,13 +66,10 @@ namespace PiDataWebApp.Areas.Admin.Controllers
                 Email = x.Email
             });
 
-
             return View(result);
         }
 
-     
-
-        public ActionResult EditUniversityInfo(int id)
+        public ActionResult EditUniversityNews(int id)
         {
             if (id > 0)
             {
@@ -90,9 +87,8 @@ namespace PiDataWebApp.Areas.Admin.Controllers
                         Phone = university.Phone,
                         FaxNo = university.FaxNo,
                         Email = university.Email,
-                        RectorId = university.RectorId,
+                        RectorId = university.ApplicationUserrId,
                         RectorMessage = university.RectorMessage
-
                     };
 
                     var result = (from user in db.Users

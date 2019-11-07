@@ -51,7 +51,7 @@ namespace PiDataWebApp.Models
 
         [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
-        public DateTime BirthDay { get; set; }
+        public Nullable<DateTime> BirthDay { get; set; }
 
         [Column(TypeName = "DateTime2")]
         public DateTime RegisteredDate { get; set; }

@@ -10,13 +10,14 @@ namespace PiData.Domain.Model
 {
     public class FacultyInfo : InfoAbstract
     {
-        public int DeanId { get; set; }
+        public string ApplicationUserrId { get; set; }
         public string DeanMessage { get; set; }
-        public int UniversityId { get; set; }
+        public int UniversityInfoId { get; set; }
 
-        public ICollection<FacultyNews> FacultyNews { get; set; }
-        public ICollection<FacultyAnnouncement> FacultyAnnouncement { get; set; }
-        public ICollection<DepartmentInfo> DepartmentInfo { get; set; }
+        public virtual ICollection<ApplicationUserr> ApplicationUserr { get; set; }
+        public virtual ICollection<DepartmentInfo> DepartmentInfo { get; set; }
+        public virtual ICollection<FacultyNews> FacultyNews { get; set; }
+        public virtual ICollection<FacultyAnnouncement> FacultyAnnouncement { get; set; }
         public virtual UniversityInfo UniversityInfo { get; set; }
 
 

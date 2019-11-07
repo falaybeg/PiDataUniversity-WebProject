@@ -271,6 +271,8 @@
     <Compile Include="Controllers\Api\AcademicCalendarController.cs" />
     <Compile Include="Controllers\Api\AccountController.cs" />
     <Compile Include="Controllers\Api\CourseController.cs" />
+    <Compile Include="Controllers\Api\DepartmentInfoController.cs" />
+    <Compile Include="Controllers\Api\FacultyInfoController.cs" />
     <Compile Include="Controllers\Api\UniversityAnnouncementController.cs" />
     <Compile Include="Controllers\Api\UniversityInfoController.cs" />
     <Compile Include="Controllers\Api\UniversityNewsController.cs" />
@@ -283,6 +285,8 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CourseViewModel.cs" />
+    <Compile Include="Models\DepartmentInfoViewModel.cs" />
+    <Compile Include="Models\FacultyInfoViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\StudentViewModel.cs" />
     <Compile Include="Models\UniversityAnnouncementViewModel.cs" />
@@ -1906,6 +1910,7 @@
     <Content Include="Areas\Admin\Views\UniversityNews\EditNews.cshtml" />
     <Content Include="Areas\Admin\Views\UniversityAnnouncement\AddAnnouncement.cshtml" />
     <Content Include="Areas\Admin\Views\UniversityAnnouncement\ListAnnouncement.cshtml" />
+    <Content Include="Areas\Admin\Views\UserManagement\UserList.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

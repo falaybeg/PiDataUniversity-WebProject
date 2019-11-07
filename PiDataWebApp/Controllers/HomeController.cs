@@ -1,4 +1,6 @@
-﻿using PiDataApp.Repository.Context;
+﻿using PiData.BLL.Interface;
+using PiDataApp.Repository.Context;
+using PiDataWebApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +11,14 @@ namespace PiDataWebApp.Controllers
 {
     public class HomeController : Controller
     {
+        private IAcademicCalendarBusiness _academicCalendar;
+        private IUniversityInfoBusiness _universityInfo;
 
+        public HomeController(IAcademicCalendarBusiness academic, IUniversityInfoBusiness university)
+        {
+            this._academicCalendar = academic;
+            this._universityInfo = university;
+        }
 
         public ActionResult Index()
         {
@@ -18,18 +27,49 @@ namespace PiDataWebApp.Controllers
 
         public ActionResult RectorMessage()
         {
+            var result = _universityInfo.GetAll();
+            List<UniversityInfoViewModel> model = new List<UniversityInfoViewModel>();
 
-            return View();
+            foreach (var item in result)
+            {
+                model.Add(new UniversityInfoViewModel
+                {
+                    RectorMessage = item.RectorMessage
+                });
+            }
+
+            return View(model);
         }
 
         public ActionResult History()
         {
-            return View();
+            var result = _universityInfo.GetAll();
+            List<UniversityInfoViewModel> model = new List<UniversityInfoViewModel>();
+
+            foreach (var item in result)
+            {
+                model.Add(new UniversityInfoViewModel
+                {
+                    History = item.History
+                });
+            }
+            return View(model);
         }
 
         public ActionResult MissionVision()
         {
-            return View();
+            var result = _universityInfo.GetAll();
+            List<UniversityInfoViewModel> model = new List<UniversityInfoViewModel>();
+
+            foreach (var item in result)
+            {
+                model.Add(new UniversityInfoViewModel
+                {
+                    Mission = item.Mission,
+                    Vission = item.Vission
+                });
+            }
+            return View(model);
         }
 
         public ActionResult AdministrativeUnits()
@@ -39,7 +79,18 @@ namespace PiDataWebApp.Controllers
 
         public ActionResult AcademicCalendar()
         {
-            return View();
+            var result = _academicCalendar.GetAll().ToList();
+            List<AcademicCalendarViewModel> model = new List<AcademicCalendarViewModel>();
+
+            foreach(var item in result)
+            {
+                model.Add(new AcademicCalendarViewModel
+                {
+                    Info = item.Info,
+                    InfoDate = item.InfoDate
+                });
+            }
+            return View(model);
         }
 
         public ActionResult Faculties()
@@ -49,9 +100,20 @@ namespace PiDataWebApp.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            var result = _universityInfo.GetAll();
+            List<UniversityInfoViewModel> model = new List<UniversityInfoViewModel>();
 
-            return View();
+            foreach (var item in result)
+            {
+                model.Add(new UniversityInfoViewModel
+                {
+                    Address = item.Address,
+                    Phone = item.Phone,
+                    FaxNo = item.FaxNo,
+                    Email = item.Email
+                });
+            }
+            return View(model);
         }
     }
 }

@@ -35,7 +35,7 @@ namespace PiDataWebApp.Controllers.Api
                 Tittle = model.Tittle,
                 Context = model.Context,
                 CreatedTime = model.CreatedTime,
-                UniversityId = model.UniversityId,
+                UniversityInfoId = model.UniversityInfoId,
                 UniversityInfo = model.UniversityInfo
             });
 
@@ -54,13 +54,29 @@ namespace PiDataWebApp.Controllers.Api
                     Tittle = model.Tittle,
                     Context = model.Context,
                     CreatedTime = model.CreatedTime,
-                    UniversityId = model.UniversityId,
+                    UniversityInfoId = model.UniversityInfoId,
                     UniversityInfo = model.UniversityInfo
                 };
 
                 return Ok(VM);
             }
             return Ok("Item Not Found !");
+        }
+
+        [HttpPost]
+        public IHttpActionResult Insert(UniversityNewsViewModel model)
+        {
+            UniversityNews data = new UniversityNews
+            {
+                Id = model.Id,
+                Tittle = model.Tittle,
+                Context = model.Context,
+                CreatedTime = DateTime.Now,
+                UniversityInfoId = model.UniversityInfoId
+            };
+
+            _universityNews.Insert(data);
+            return Ok(data);
         }
 
 
@@ -73,7 +89,7 @@ namespace PiDataWebApp.Controllers.Api
                 Tittle = model.Tittle,
                 Context = model.Context,
                 CreatedTime = model.CreatedTime,
-                UniversityId = model.UniversityId
+                UniversityInfoId = model.UniversityInfoId
             };
 
             _universityNews.Update(data);

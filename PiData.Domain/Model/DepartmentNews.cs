@@ -10,7 +10,7 @@ namespace PiData.Domain.Model
 {
     public class DepartmentNews : News
     {
-        public int DepartmentId { get; set; }
+        public int DepartmentInfoId { get; set; }
 
         public virtual DepartmentInfo DepartmentInfo { get; set; }
 

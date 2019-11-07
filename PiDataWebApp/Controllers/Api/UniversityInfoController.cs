@@ -40,7 +40,7 @@ namespace PiDataWebApp.Controllers.Api
                 Phone = model.Phone,
                 FaxNo = model.FaxNo,
                 Email = model.Email,
-                RectorId = model.RectorId,
+                RectorId = model.ApplicationUserrId,
                 RectorMessage = model.RectorMessage
             });
 
@@ -64,7 +64,7 @@ namespace PiDataWebApp.Controllers.Api
                     Phone = model.Phone,
                     FaxNo = model.FaxNo,
                     Email = model.Email,
-                    RectorId = model.RectorId,
+                    RectorId = model.ApplicationUserrId,
                     RectorMessage = model.RectorMessage,
                 };
 
@@ -87,7 +87,7 @@ namespace PiDataWebApp.Controllers.Api
                 Phone = model.Phone,
                 FaxNo = model.FaxNo,
                 Email = model.Email,
-                RectorId = model.RectorId,
+                ApplicationUserrId = model.RectorId,
                 RectorMessage = model.RectorMessage
             };
 
@@ -110,7 +110,7 @@ namespace PiDataWebApp.Controllers.Api
                 Phone = model.Phone,
                 FaxNo = model.FaxNo,
                 Email = model.Email,
-                RectorId = model.RectorId,
+                ApplicationUserrId = model.RectorId,
                 RectorMessage = model.RectorMessage,
             };
 

@@ -22,6 +22,8 @@ namespace PiDataWebApp
             container.RegisterType<IUniversityInfoBusiness, UniversityInfoBusiness>();
             container.RegisterType<IUniversityNewsBusiness, UniversityNewsBusiness>();
             container.RegisterType<IUniversityAnnouncementBusiness, UniversityAnnouncementBusiness>();
+            container.RegisterType <IFacultyInfoBusiness, FacultyInfoBusiness>();
+            container.RegisterType<IDepartmentInfoBusiness, DepartmentInfoBusiness>();
             container.RegisterType<IAcademicCalendarBusiness, AcademicCalendarBusiness>();
             container.RegisterType<IStudentBusiness, StudentBusiness>();
 

@@ -1,7 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "AcademicCalendar";
-}
+﻿@model IEnumerable<PiDataWebApp.Models.AcademicCalendarViewModel>
 
 <h2>AcademicCalendar</h2>
 
@@ -33,10 +30,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.InfoDate.ToString("dd-MM-yyyy")</td>
+                        <td>@item.Info</td>
+                    </tr>
+                }
+
             </tbody>
         </table>
     </div>

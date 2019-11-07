@@ -1,4 +1,7 @@
-﻿<div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('/Content/images/bg_1.jpg')">
+﻿@model IEnumerable<PiDataWebApp.Models.UniversityInfoViewModel>
+
+
+<div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('/Content/images/bg_1.jpg')">
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg-7">
@@ -24,11 +27,21 @@
             <h2 class="section-title-underline mb-5">
                 <span>Misyon</span>
             </h2>
-            <p>
-                PiData Üniversitesi, eleştirel düşünebilen ve sorun çözebilen, kişisel ve mesleki alanda kendini sürekli yenileyen, doğaya duyarlı, farklılıklara saygı gösteren, yaratıcı bireyler yetiştirmeyi,
-                bilime ve sanata evrensel düzeyde katkı sağlayan, etik değerleri gözeten, disiplinlerarası araştırmalar yapmayı,
-                sosyal sorumluluk bilinci ile ülke sorunlarına duyarlı, kamu yararını gözeten yaşadığı kentin kalkınmasına ve gelişmesine katkıda bulunan hizmetler sunmayı  görev edinmiştir.
-            </p>
+
+            @foreach (var item in Model)
+            {
+                <p>
+                    @item.Mission
+                </p>
+            }
+            @*
+                    <p>
+                    PiData Üniversitesi, eleştirel düşünebilen ve sorun çözebilen, kişisel ve mesleki alanda kendini sürekli yenileyen, doğaya duyarlı, farklılıklara saygı gösteren, yaratıcı bireyler yetiştirmeyi,
+                    bilime ve sanata evrensel düzeyde katkı sağlayan, etik değerleri gözeten, disiplinlerarası araştırmalar yapmayı,
+                    sosyal sorumluluk bilinci ile ülke sorunlarına duyarlı, kamu yararını gözeten yaşadığı kentin kalkınmasına ve gelişmesine katkıda bulunan hizmetler sunmayı  görev edinmiştir.
+                </p>
+            *@
+
             <p>
 
             </p>
@@ -43,8 +56,16 @@
                 <span>Vizyon</span>
 
             </h2>
-            <p>Nitelikli araştırmalar yapan, bilgi ve yeteneklerini insanlık ve ülke yararına kullanan ve evrensel düzeyde fark yaratarak geleceğe yön veren yenilikçi üniversite olmaktır.</p>
+            @foreach (var item in Model)
+            {
+                <p>
+                    @item.Vission
+                </p>
+            }
+            @*
+                <p>Nitelikli araştırmalar yapan, bilgi ve yeteneklerini insanlık ve ülke yararına kullanan ve evrensel düzeyde fark yaratarak geleceğe yön veren yenilikçi üniversite olmaktır.</p>
 
+            *@
 
         </div>
     </div>

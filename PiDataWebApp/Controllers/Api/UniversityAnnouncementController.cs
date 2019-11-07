@@ -34,7 +34,7 @@ namespace PiDataWebApp.Controllers.Api
                 Tittle = model.Tittle,
                 Context = model.Context,
                 CreatedTime = model.CreatedTime,
-                UniversityId = model.UniversityId,
+                UniversityId = model.UniversityInfoId,
                 UniversityInfo = model.UniversityInfo
             });
 
@@ -53,7 +53,7 @@ namespace PiDataWebApp.Controllers.Api
                     Tittle = model.Tittle,
                     Context = model.Context,
                     CreatedTime = model.CreatedTime,
-                    UniversityId = model.UniversityId,
+                    UniversityId = model.UniversityInfoId,
                     UniversityInfo = model.UniversityInfo
                 };
 
@@ -72,7 +72,7 @@ namespace PiDataWebApp.Controllers.Api
                 Tittle = model.Tittle,
                 Context = model.Context,
                 CreatedTime = model.CreatedTime,
-                UniversityId = model.UniversityId
+                UniversityInfoId = model.UniversityId
             };
 
             _universityAnnouncement.Update(data);

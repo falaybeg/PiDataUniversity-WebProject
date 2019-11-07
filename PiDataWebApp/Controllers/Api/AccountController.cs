@@ -342,9 +342,13 @@ namespace PiDataWebApp.Controllers.Api
                 PhoneNumber = model.PhoneNumber,
                 Email = model.Email,
                 UserName = model.Email,
-                RegisteredDate = model.RegisteredDate
+                RegisteredDate = DateTime.Now,
+                StudentNumber = model.StudentNumber,
+                DepartmentInfoId = model.DepartmentInfoId,
+                StartedTime = DateTime.Now
             };
 
+            /*
             var student = new Student()
             {
                 UserId = user.Id,
@@ -352,12 +356,10 @@ namespace PiDataWebApp.Controllers.Api
                 StartedTime = model.StartedTime,
                 DepartmentId = model.DepartmentId
             };
-            _iStudentBusiness.Insert(student);
+            _iStudentBusiness.Insert(student); */
 
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
-
-
 
             if (!result.Succeeded)
             {

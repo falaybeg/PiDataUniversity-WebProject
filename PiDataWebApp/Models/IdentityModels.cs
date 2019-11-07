@@ -16,6 +16,9 @@ namespace PiDataWebApp.Models
         public string Gender { get; set; }
         public Nullable<DateTime> RegisteredDate { get; set; }
         public Nullable<DateTime> BirthDay { get; set; }
+        public string StudentNumber { get; set; }
+        public Nullable<DateTime> StartedTime { get; set; }
+        public Nullable<int> DepartmentInfoId { get; set; }
 
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)

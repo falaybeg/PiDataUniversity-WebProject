@@ -26,8 +26,7 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                             @foreach (var item in Model)
+                            @foreach (var item in Model)
                             {
                                 <tr>
                                     <td>@item.Name</td>
@@ -39,7 +38,7 @@
                                         <div class="btn-group btn-hspace">
                                             <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle " aria-expanded="false">İşlem<span class="icon-dropdown mdi mdi-chevron-down"></span></button>
                                             <ul role="menu" class="dropdown-menu pull-right">
-                                                <li><a href="@Url.Action("EditUniversityInfo","UniversityInfo", new { Area = "Admin", id = item.Id})"><i class="icon mdi mdi-edit"></i><span>Guncelle</span></a></li>
+                                                <li><a href="@Url.Action("EditUniversityNews","UniversityInfo", new { Area = "Admin", id = item.Id})"><i class="icon mdi mdi-edit"></i><span>Güncelle</span></a></li>
                                                 <li><a href="#" onclick="Delete(@item.Id)"><i class="icon mdi mdi-delete"></i><span>Sil</span></a></li>
                                             </ul>
                                         </div>
@@ -53,7 +52,6 @@
     </div>
 </div>
 
-@*
     <script>
         var token = sessionStorage.getItem("accessToken");
         var headers = {};
@@ -61,20 +59,18 @@
 
         $(document).ready(function () {
             if (token == null) {
-                toastr.info("Please try again after signin up !", { timeOut: 3000 });
-                window.location.href = "/UserManagement/Login";
+                window.location.href = "/Admin/UserManagement/Login";
             }
         });
 
         var Delete = function (id) {
 
             $.ajax({
-                url: "/api/Products/" + id,
+                url: "/api/UniversityInfo/" + id,
                 method: "DELETE",
                 headers: headers,
                 success: function () {
-                    toastr.success("Product deleted successfully", { timeOut: 1000 })
-                    window.location.replace("/Product/ListProduct");
+                    window.location.replace("/Admin/UniversityInfo/ListUniversityInfo");
 
                 },
                 error: function (jqXHR) {
@@ -84,8 +80,3 @@
         };
 
     </script>
-*@
-
-
-
-

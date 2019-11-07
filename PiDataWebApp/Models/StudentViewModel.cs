@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PiData.Domain.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,7 +10,8 @@ namespace PiDataWebApp.Models
     {
 
         public string StudentNumber { get; set; }
-        public DateTime StartedTime { get; set; }
-        public int DepartmentId { get; set; }
+        public Nullable<DateTime> StartedTime { get; set; }
+        public int DepartmentInfoId { get; set; }
+        public DepartmentInfo DepartmentInfo { get; set; }
     }
 }

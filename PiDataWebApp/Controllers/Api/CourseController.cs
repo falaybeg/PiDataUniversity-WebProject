@@ -38,7 +38,7 @@ namespace PiDataWebApp.Controllers.Api
                     Name = result.Description,
                     AKTS = result.AKTS,
                     CreatedTime = result.CreatedTime,
-                    DepartmentId = result.DepartmentId
+                    DepartmentId = result.DepartmentInfoId
                 };
 
                 return Ok(VM);
@@ -56,7 +56,7 @@ namespace PiDataWebApp.Controllers.Api
                 Name = model.Description,
                 AKTS = model.AKTS,
                 CreatedTime = model.CreatedTime,
-                DepartmentId = model.DepartmentId,
+                DepartmentId = model.DepartmentInfoId,
                 DepartmentInfo = model.DepartmentInfo,
             });
 
@@ -73,7 +73,7 @@ namespace PiDataWebApp.Controllers.Api
                 Name = model.Description,
                 AKTS = model.AKTS,
                 CreatedTime = DateTime.Now,
-                DepartmentId = model.DepartmentId
+                DepartmentInfoId = model.DepartmentId
             };
 
 
@@ -90,7 +90,7 @@ namespace PiDataWebApp.Controllers.Api
                 Code = model.Code,
                 Name = model.Description,
                 AKTS = model.AKTS,
-                DepartmentId = model.DepartmentId
+                DepartmentInfoId = model.DepartmentId
             };
 
             _courseBussiness.Update(data);

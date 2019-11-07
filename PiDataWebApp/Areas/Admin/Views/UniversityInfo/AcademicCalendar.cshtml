@@ -43,7 +43,7 @@
                                         @foreach (var item in Model)
                                         {
                                             <tr>
-                                                <td>@item.InfoDate.ToString("yyyy-MM-dd")</td>
+                                                <td>@item.InfoDate.ToString("dd-MM-yyyy")</td>
                                                 <td>@item.Info</td>
                                                 <td class="text-right">
                                                     <div class="btn-group btn-hspace">
@@ -103,7 +103,7 @@
                     Info: $("#info").val()
                 },
                 success: function () {
-                    window.location.replace("/Admin/HomeAdmin/Index");
+                    window.location.replace("Admin/UniversityInfo/AcademicCalendar");
                 },
                 error: function (jqXHR) {
                     alert("Error !");

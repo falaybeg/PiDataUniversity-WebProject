@@ -15,7 +15,7 @@ namespace PiData.Domain.Model
         public string Description { get; set; }
         public int AKTS { get; set; }
         public DateTime CreatedTime { get; set; }
-        public int DepartmentId { get; set; }
+        public int DepartmentInfoId { get; set; }
 
         public virtual DepartmentInfo DepartmentInfo { get; set; }
         public virtual ICollection<StudentCourse> StudentCourse { get; set; }

@@ -12,7 +12,7 @@ namespace PiDataWebApp.Models
         public string Tittle { get; set; }
         public string Context { get; set; }
         public DateTime CreatedTime { get; set; }
-        public int UniversityId { get; set; }
+        public int UniversityInfoId { get; set; }
 
         public UniversityInfo UniversityInfo { get; set; }
     }
