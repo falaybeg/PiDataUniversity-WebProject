@@ -1911,6 +1911,7 @@
     <Content Include="Areas\Admin\Views\UniversityAnnouncement\AddAnnouncement.cshtml" />
     <Content Include="Areas\Admin\Views\UniversityAnnouncement\ListAnnouncement.cshtml" />
     <Content Include="Areas\Admin\Views\UserManagement\UserList.cshtml" />
+    <Content Include="Areas\Admin\Views\UserManagement\AddStudent.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

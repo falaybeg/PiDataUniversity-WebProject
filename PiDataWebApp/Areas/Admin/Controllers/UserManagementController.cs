@@ -60,13 +60,17 @@ namespace PiDataWebApp.Areas.Admin.Controllers
         {
             List<StudentViewModel> model = new List<StudentViewModel>();
             var resu = db.Users.ToList();
+
             foreach(var item in resu)
             {
                 model.Add(new StudentViewModel
                 {
+                    Id = item.Id,
                     IdentityNumber = item.IdentityNumber,
                     FirstName = item.FirstName,
                     LastName = item.LastName,
+                    Gender = item.Gender,
+                    PhoneNumber = item.PhoneNumber,
                     StudentNumber = item.StudentNumber,
                     BirthDay = item.BirthDay,
                     Email = item.Email
@@ -80,57 +84,55 @@ namespace PiDataWebApp.Areas.Admin.Controllers
 
         public ActionResult EditUser()
         {
-            roleStore = new RoleStore<IdentityRole>(new PiDataDbContext()); ;
-            roleManager = new RoleManager<IdentityRole>(roleStore);
-
-            var roles = roleManager.Roles.ToList();
-            ViewBag.Roles = new SelectList(roles, "Name", "Name");
-
-            //List<SelectListItem> items = new List<SelectListItem>();
-            //foreach(var item in roles)
-            //{
-            //    items.Add(new SelectListItem { Text = item.Name, Value = item.Name });
-            //}
 
 
             return View("EditUser");
         }
 
-        [Authorize]
-        public ActionResult UpdateUser(string id)
+        public ActionResult AddStudent()
         {
-            /*
-            roleStore = new RoleStore<IdentityRole>(new PiDataDbContext()); ;
-            roleManager = new RoleManager<IdentityRole>(roleStore);
-            //var resul = await UserManager.AddToRoleAsync("88b3e953-471f-43e0-89d1-23fde676b466","DepoMuduru");
+            List<SelectListItem> items = new List<SelectListItem>();
+            items.Add(new SelectListItem { Text = "Erken", Value = "Erken" });
+            items.Add(new SelectListItem { Text = "Kadın", Value = "Kadın" });
+
+            ViewBag.Gender = items;
+
+            return View();
+        }
+
+        public ActionResult EditStudent(string id)
+        {
             if (id != null)
             {
                 var result = UserManager.FindByIdAsync(id);
                 var user = result.Result;
                 if (user != null)
                 {
-                    var roleName = UserManager.GetRoles(id);
-                    var vm = new UserManagementViewModel
+                    var vm = new StudentViewModel
                     {
                         Id = user.Id,
+                        IdentityNumber = user.IdentityNumber,
                         FirstName = user.FirstName,
                         LastName = user.LastName,
+                        Gender = user.Gender,
                         PhoneNumber = user.PhoneNumber,
-                        Email = user.Email,
-                        RegisteredDate = user.RegisteredDate,
-                        RoleName = roleName[0]
+                        StudentNumber = user.StudentNumber,
+                        BirthDay = user.BirthDay,
+                        Email = user.Email
+
                     };
 
-                    var roles = roleManager.Roles.ToList();
-                    //ViewData["Roles"] = new SelectList(roles, null, "Name");
-                    ViewBag.Roles = new SelectList(roles, "Name", "Name");
+                    List<SelectListItem> items = new List<SelectListItem>();
+                    items.Add(new SelectListItem { Text = "Erken", Value = "Erken" });
+                    items.Add(new SelectListItem { Text = "Kadın", Value = "Kadın" });
 
-                    return View("EditUser", vm);
+                    ViewBag.Gender = items;
+
+                    return View("AddStudent", vm);
                 }
                 
             }
-            */
-            return View("EditUser");
+            return View("AddStudent");
 
         }
 
