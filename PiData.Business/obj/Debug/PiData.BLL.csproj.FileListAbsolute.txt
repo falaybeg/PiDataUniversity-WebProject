@@ -25,9 +25,9 @@ C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\NTier
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\NTierApp.Business.pdb
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\EntityFramework.dll
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\NTier.Domain.dll
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\NtierApp.Repository.dll
-C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\NTier.Domain.pdb
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Business\bin\Debug\NTier.Domain.dll.config
