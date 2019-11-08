@@ -22,7 +22,8 @@ namespace PiDataWebApp.Models
         public string HeadDepartmentMessage { get; set; }
         public int FacultyId { get; set; }
 
-
+        public ICollection<ApplicationUserr> ApplicationUserr { get; set; }
+        public FacultyInfo FacultyInfo { get; set; }
         public DepartmentNews DepartmentNews { get; set; }
         public DepartmentAnnouncement DepartmentAnnouncement { get; set; }
     }

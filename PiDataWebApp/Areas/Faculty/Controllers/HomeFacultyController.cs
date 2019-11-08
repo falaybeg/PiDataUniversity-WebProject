@@ -27,7 +27,7 @@ namespace PiDataWebApp.Areas.Faculty.Controllers
 
         public ActionResult DeanMessage()
         {
-            var result = _facultyInfo.GetAll();
+            var result = _facultyInfo.GetAll().Take(1);
             List<FacultyInfoViewModel> model = new List<FacultyInfoViewModel>();
 
             foreach (var item in result)
@@ -43,7 +43,7 @@ namespace PiDataWebApp.Areas.Faculty.Controllers
 
         public ActionResult History()
         {
-            var result = _facultyInfo.GetAll();
+            var result = _facultyInfo.GetAll().Take(1);
             List<FacultyInfoViewModel> model = new List<FacultyInfoViewModel>();
 
             foreach (var item in result)
@@ -59,7 +59,7 @@ namespace PiDataWebApp.Areas.Faculty.Controllers
 
         public ActionResult MissionVision()
         {
-            var result = _facultyInfo.GetAll();
+            var result = _facultyInfo.GetAll().Take(1);
             List<FacultyInfoViewModel> model = new List<FacultyInfoViewModel>();
 
             foreach (var item in result)
@@ -102,7 +102,7 @@ namespace PiDataWebApp.Areas.Faculty.Controllers
 
         public ActionResult Contact()
         {
-            var result = _facultyInfo.GetAll();
+            var result = _facultyInfo.GetAll().Take(1);
             List<FacultyInfoViewModel> model = new List<FacultyInfoViewModel>();
 
             foreach (var item in result)

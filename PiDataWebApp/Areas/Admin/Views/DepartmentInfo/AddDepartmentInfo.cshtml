@@ -1,5 +1,5 @@
-﻿@*@model NTierApp.WebApp.Models.ProductViewModel
-*@
+﻿@model PiDataWebApp.Models.DepartmentInfoViewModel
+
 
 
 <div class="row">
@@ -79,17 +79,19 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label yazi">Bölüm Adı :</label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control parsley-error" data-parsley-id="29" id="universityName" name="Name">
+                            <input type="text" class="form-control parsley-error" data-parsley-id="29" id="name" name="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label yazi" for="sel1">Fakülte :</label>
+                        <div class="col-sm-6">
+                            @Html.DropDownListFor(m => m.FacultyId, (SelectList)ViewBag.Faculty, "- Fakülte Seçiniz -", new { @class = "form-control" })
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label yazi" for="sel1">Bölüm Başkanı :</label>
                         <div class="col-sm-6">
-                            @*
-                @Html.DropDownListFor(m => m.CategoryId, (SelectList)ViewBag.Category, "- Select Category -", new { @class = "form-control" })
-
-                            *@
-
+                            @Html.DropDownListFor(m => m.HeadOfDepartmentId, (SelectList)ViewBag.HeadOfDepart, "- Bölüm Başkanı Seçiniz -", new { @class = "form-control" })
                         </div>
                     </div>
                     <div class="form-group">
@@ -119,7 +121,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label yazi">Adres :</label>
                         <div class="col-sm-6">
-                            <textarea class="form-control"  id="address" name="Address"></textarea>
+                            <textarea class="form-control" id="address" name="Address"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
@@ -140,16 +142,7 @@
                             <input type="text" class="form-control parsley-error" data-parsley-id="29" id="email" name="Email">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label yazi" for="sel1">Üniversite :</label>
-                        <div class="col-sm-6">
-                            @*
-                @Html.DropDownListFor(m => m.CategoryId, (SelectList)ViewBag.Category, "- Select Category -", new { @class = "form-control" })
 
-                            *@
-
-                        </div>
-                    </div>
 
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-10 ">
@@ -165,57 +158,43 @@
     </div>
 </div>
 
-@*
-    <script>
-        $(function () {
-            $("#inputFile").change(function () {
-                readURL(this);
-            });
-        });
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    //alert(e.target.result);
-                    $('#imgLogo').attr('src', e.target.result);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-    </script>
 
 
 
     <script>
+
        var token = sessionStorage.getItem("accessToken");
     var headers = {};
     headers.Authorization = "Bearer " + token;
 
     $(document).ready(function() {
       if (token == null) {
-            toastr.info( "Please try again after signin up !", { timeOut: 3000 });
-            window.location.href = "/UserManagement/Login";
+            window.location.href = "/Admin/UserManagement/Login";
       }
     });
 
         $("#btnSave").click(function() {
       $.ajax({
-        url: "http://localhost:5000/api/Products",
+        url: "/api/DepartmentInfo",
         method: "POST",
         headers: headers,
         data: {
-          Name: $("#productName").val(),
-          Code: $("#productCode").val(),
-          SellingPrice: $("#productSelling").val(),
-          PurchasingPrice: $("#productPurchase").val(),
-          Quantity: $("#quantity").val(),
-          CategoryId: $("#CategoryId").val(),
-          SupplierId: $("#SupplierId").val()
+              Name: $("#name").val(),
+              History: $("#history").val(),
+              Mission: $("#mission").val(),
+              Vission: $("#vission").val(),
+              Address: $("#address").val(),
+              Phone: $("#phone").val(),
+              FaxNo: $("#faxNo").val(),
+              Email: $("#email").val(),
+              HeadOfDepartmentId: $("#HeadOfDepartmentId").val(),
+              FacultyId: $("#FacultyId").val(),
+              HeadDepartmentMessage: $("#headDepartmenMessage").val()
         },
 
         success: function() {
-          toastr.success( "Product added successfully !", { timeOut: 2000 });
-          window.location.href = "/Product/ListProduct";
+        alert("Department added successfuly!");
+        window.location.href = "/Admin/DepartmentInfo/ListDepartmentInfo";
         },
         error: function(jqXHR) {
           alert("Error !");
@@ -240,7 +219,7 @@
         },
         success: function() {
         toastr.success( "Product updated successfully !", { timeOut: 2000 });
-          window.location.href = "/Product/ListProduct";
+          window.location.href = "/Deparment/EditDepartment";
         },
         error: function(jqXHR) {
           alert("Error !");
@@ -249,24 +228,3 @@
     };
 
     </script>
-
-*@
-
-
-
-@*<div class="form-group">
-
-        <label class="col-sm-3 control-label yazi"><br><br><br><b>Product Picture : </b></label>
-        <div class="col-sm-4">
-            <br>
-            <br>
-            <br>
-            <input type="file" name="pic" accept="image/*" placeholder="Ürün Resmi Ekleyiniz..." class="form-control parsley-error">
-        </div>
-
-        <div class="col-sm-3">
-            &nbsp      &nbsp      &nbsp &nbsp
-
-            <img style="margin-top: -12px" width="140" height="115" src="http://news.yuvayana.org/wp-content/uploads/sites/10/2015/06/muther-dairy-milk.jpg">
-        </div>
-    </div>*@

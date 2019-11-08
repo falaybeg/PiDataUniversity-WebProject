@@ -22,6 +22,8 @@ namespace PiData.Domain.Model
         public virtual ICollection<Course> Course { get; set; }
         public virtual ICollection<DepartmentNews> DepartmentNews { get; set; }
         public virtual ICollection<DepartmentAnnouncement> DepartmentAnnouncement { get; set; }
+        public virtual ICollection<FacultyInfo> FacultyInfoo { get; set; }
+
         public virtual FacultyInfo FacultyInfo { get; set; }
 
     }

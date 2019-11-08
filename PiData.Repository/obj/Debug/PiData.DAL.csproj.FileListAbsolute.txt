@@ -56,3 +56,5 @@ C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\Nti
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.lastmigration.resources
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.migration.resources
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.migration2.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.databaupdatephasee.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.databaseupdatee.resources
