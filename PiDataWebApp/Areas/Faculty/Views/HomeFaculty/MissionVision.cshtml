@@ -1,0 +1,72 @@
+﻿@model IEnumerable<PiDataWebApp.Models.FacultyInfoViewModel>
+
+
+<div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('/Content/images/bg_1.jpg')">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="custom-breadcrumns border-bottom">
+    <div class="container">
+        <a href="index.html">Ana Sayfa</a>
+        <span class="mx-3 icon-keyboard_arrow_right"></span>
+        <span class="current">Misyon ve Vizyon</span>
+    </div>
+</div>
+<br />
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-lg-5 mb-lg-0 mb-4">
+            <img src="~/Content/images/mission.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-7 ml-auto align-self-center">
+            <h2 class="section-title-underline mb-5">
+                <span>Misyon</span>
+            </h2>
+
+            @foreach (var item in Model)
+            {
+                <p>
+                    @item.Mission
+                </p>
+            }
+            @*
+                    <p>
+                    PiData Üniversitesi, eleştirel düşünebilen ve sorun çözebilen, kişisel ve mesleki alanda kendini sürekli yenileyen, doğaya duyarlı, farklılıklara saygı gösteren, yaratıcı bireyler yetiştirmeyi,
+                    bilime ve sanata evrensel düzeyde katkı sağlayan, etik değerleri gözeten, disiplinlerarası araştırmalar yapmayı,
+                    sosyal sorumluluk bilinci ile ülke sorunlarına duyarlı, kamu yararını gözeten yaşadığı kentin kalkınmasına ve gelişmesine katkıda bulunan hizmetler sunmayı  görev edinmiştir.
+                </p>
+            *@
+
+            <p>
+
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="~/Content/images/vision.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-7 mr-auto align-self-center order-2 order-lg-1">
+            <h2 class="section-title-underline mb-5">
+                <span>Vizyon</span>
+
+            </h2>
+            @foreach (var item in Model)
+            {
+                <p>
+                    @item.Vission
+                </p>
+            }
+            @*
+                <p>Nitelikli araştırmalar yapan, bilgi ve yeteneklerini insanlık ve ülke yararına kullanan ve evrensel düzeyde fark yaratarak geleceğe yön veren yenilikçi üniversite olmaktır.</p>
+
+            *@
+
+        </div>
+    </div>
+</div>

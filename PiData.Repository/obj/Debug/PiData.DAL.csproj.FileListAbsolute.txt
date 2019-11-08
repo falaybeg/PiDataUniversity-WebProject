@@ -50,3 +50,9 @@ C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiD
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\PiData.DAL.csproj.CopyComplete
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.dll
 C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.pdb
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.UniversityFacultyDb.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.updatesomedb.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.dbupdate.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.lastmigration.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.migration.resources
+C:\Users\Admin\Music\PiDataUniversity-WebProject\PiData.Repository\obj\Debug\NtierApp.Repository.Migrations.migration2.resources

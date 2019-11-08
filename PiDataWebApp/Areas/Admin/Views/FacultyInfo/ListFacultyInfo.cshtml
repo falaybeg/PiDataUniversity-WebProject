@@ -1,6 +1,4 @@
-﻿@*
-    @model IEnumerable<NTierApp.WebApp.Models.ProductViewModel>
-*@
+﻿@model IEnumerable<PiDataWebApp.Models.FacultyInfoViewModel>
 
 
 <div class="row">
@@ -20,40 +18,35 @@
                     <thead>
                         <tr style="font-size: 16px;  background-color:lavender">
                             <th width="20%">Fakülte Adı</th>
-                            <th width="18%">Dekan</th>
                             <th width="23%">Adres</th>
                             <th width="11%">Telefon</th>
                             <th width="11%">Fax No</th>
                             <th width="15%">Email</th>
+                            <th width="15%">Üniversite</th>
                             <th> </th>
                         </tr>
                     </thead>
                     <tbody>
-
-                        @*
-
                              @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td>@item.Code</td>
                                     <td>@item.Name</td>
-                                    <td>@String.Format("{0:0.##}", item.PurchasingPrice) ₺</td>
-                                    <td>@String.Format("{0:0.##}", item.SellingPrice) ₺</td>
-                                    <td>@item.Category.Name</td>
-                                    <td>@item.Supplier.Name</td>
-                                    <td>@item.Quantity</td>
+                                    <td>@item.Address</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.FaxNo</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.UniversityInfo.Name</td>
                                     <td class="text-right">
                                         <div class="btn-group btn-hspace">
                                             <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle " aria-expanded="false">Action <span class="icon-dropdown mdi mdi-chevron-down"></span></button>
                                             <ul role="menu" class="dropdown-menu pull-right">
-                                                <li><a href="@Url.Action("EditProduct","Product", new { id = item.Id})"><i class="icon mdi mdi-edit"></i><span>Edit</span></a></li>
+                                                <li><a href="@Url.Action("EditInfo","FacultyInfo", new { Area = "Admin", id = item.Id})"><i class="icon mdi mdi-edit"></i><span>Edit</span></a></li>
                                                 <li><a href="#" onclick="Delete(@item.Id)"><i class="icon mdi mdi-delete"></i><span>Delete</span></a></li>
                                             </ul>
                                         </div>
                                     </td>
                                 </tr>
                             }
-                        *@
                     </tbody>
                 </table>
             </div>
@@ -61,28 +54,26 @@
     </div>
 </div>
 
-@*
     <script>
-        var token = sessionStorage.getItem("accessToken");
+     var token = sessionStorage.getItem("accessToken");
         var headers = {};
         headers.Authorization = "Bearer " + token;
 
         $(document).ready(function () {
             if (token == null) {
-                toastr.info("Please try again after signin up !", { timeOut: 3000 });
-                window.location.href = "/UserManagement/Login";
+                window.location.href = "/Admin/UserManagement/Login";
             }
         });
 
         var Delete = function (id) {
 
             $.ajax({
-                url: "/api/Products/" + id,
+                url: "/api/FacultyInfo/" + id,
                 method: "DELETE",
                 headers: headers,
                 success: function () {
-                    toastr.success("Product deleted successfully", { timeOut: 1000 })
-                    window.location.replace("/Product/ListProduct");
+                    alert("Faculty deleted successfully");
+                    window.location.replace("/Admin/FacultyInfo/ListFacultyInfo");
 
                 },
                 error: function (jqXHR) {
@@ -92,7 +83,6 @@
         };
 
     </script>
-*@
 
 
 

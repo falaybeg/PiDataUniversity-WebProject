@@ -21,7 +21,12 @@ namespace PiDataWebApp.Models
         public string DeanMessage { get; set; }
         public int UniversityId { get; set; }
 
+        public string DeanName { get; set; }
+        public string DeanSurname { get; set; }
 
+
+        public ICollection<ApplicationUserr> ApplicationUserr { get; set; }
+        public UniversityInfo UniversityInfo { get; set; }
 
         public FacultyNews FacultyNews { get; set; }
         public FacultyAnnouncement FacultyAnnouncement { get; set; }

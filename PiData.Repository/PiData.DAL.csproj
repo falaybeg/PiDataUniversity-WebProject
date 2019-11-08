@@ -82,6 +82,30 @@
     <Compile Include="Migrations\201911071843457_academiccalendar.Designer.cs">
       <DependentUpon>201911071843457_academiccalendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911080742129_UniversityFacultyDb.cs" />
+    <Compile Include="Migrations\201911080742129_UniversityFacultyDb.Designer.cs">
+      <DependentUpon>201911080742129_UniversityFacultyDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911080749061_updatesomedb.cs" />
+    <Compile Include="Migrations\201911080749061_updatesomedb.Designer.cs">
+      <DependentUpon>201911080749061_updatesomedb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911080802212_dbupdate.cs" />
+    <Compile Include="Migrations\201911080802212_dbupdate.Designer.cs">
+      <DependentUpon>201911080802212_dbupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911080807247_lastmigration.cs" />
+    <Compile Include="Migrations\201911080807247_lastmigration.Designer.cs">
+      <DependentUpon>201911080807247_lastmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911080817424_migration.cs" />
+    <Compile Include="Migrations\201911080817424_migration.Designer.cs">
+      <DependentUpon>201911080817424_migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911080837302_migration2.cs" />
+    <Compile Include="Migrations\201911080837302_migration2.Designer.cs">
+      <DependentUpon>201911080837302_migration2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AcademicCalendarRepository.cs" />
@@ -125,6 +149,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911071843457_academiccalendar.resx">
       <DependentUpon>201911071843457_academiccalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911080742129_UniversityFacultyDb.resx">
+      <DependentUpon>201911080742129_UniversityFacultyDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911080749061_updatesomedb.resx">
+      <DependentUpon>201911080749061_updatesomedb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911080802212_dbupdate.resx">
+      <DependentUpon>201911080802212_dbupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911080807247_lastmigration.resx">
+      <DependentUpon>201911080807247_lastmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911080817424_migration.resx">
+      <DependentUpon>201911080817424_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911080837302_migration2.resx">
+      <DependentUpon>201911080837302_migration2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -14,7 +14,7 @@ namespace PiData.Domain.Model
         public string RectorMessage { get; set; }
 
 
-
+        public virtual FacultyInfo FacultyInfo { get; set; }
         public virtual ICollection<ApplicationUserr> ApplicationUserr { get; set; }
         public virtual ICollection<UniversityNews> UniversityNews { get; set; }
         public virtual ICollection<UniversityAnnouncement> UniversityAnnouncement { get; set; }

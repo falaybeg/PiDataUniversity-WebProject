@@ -280,8 +280,6 @@
     <Compile Include="Controllers\Api\UniversityAnnouncementController.cs" />
     <Compile Include="Controllers\Api\UniversityInfoController.cs" />
     <Compile Include="Controllers\Api\UniversityNewsController.cs" />
-    <Compile Include="Controllers\DepartmentController.cs" />
-    <Compile Include="Controllers\FacultyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Api\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2001,8 +1999,6 @@
     <Folder Include="Areas\Faculty\Models\" />
     <Folder Include="Views\AcademicCalendar\" />
     <Folder Include="Views\Course\" />
-    <Folder Include="Views\Department\" />
-    <Folder Include="Views\Faculty\" />
     <Folder Include="Views\UniversityAnnouncement\" />
     <Folder Include="Views\UniversityInfo\" />
     <Folder Include="Views\UniversityNews\" />

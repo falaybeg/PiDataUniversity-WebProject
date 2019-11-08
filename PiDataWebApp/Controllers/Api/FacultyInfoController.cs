@@ -74,53 +74,65 @@ namespace PiDataWebApp.Controllers.Api
         [HttpPost]
         public IHttpActionResult Insert(FacultyInfoViewModel model)
         {
-            FacultyInfo data = new FacultyInfo
+            if (model != null)
             {
-                Id = model.Id,
-                Name = model.Name,
-                History = model.History,
-                Mission = model.Mission,
-                Vission = model.Vission,
-                Address = model.Address,
-                Phone = model.Phone,
-                FaxNo = model.FaxNo,
-                Email = model.Email,
-                ApplicationUserrId = model.DeanId,
-                DeanMessage = model.DeanMessage
-            };
+                FacultyInfo data = new FacultyInfo
+                {
+                    Id = model.Id,
+                    Name = model.Name,
+                    History = model.History,
+                    Mission = model.Mission,
+                    Vission = model.Vission,
+                    Address = model.Address,
+                    Phone = model.Phone,
+                    FaxNo = model.FaxNo,
+                    Email = model.Email,
+                    ApplicationUserrId = model.DeanId,
+                    DeanMessage = model.DeanMessage,
+                    UniversityInfoId = model.UniversityId
+                };
+                _facultyInfo.Insert(data);
+                return Ok(data);
+            }
 
-
-            _facultyInfo.Insert(data);
-            return Ok(data);
+            return NotFound();
         }
 
         [HttpPut]
         public IHttpActionResult Update(FacultyInfoViewModel model)
         {
-            FacultyInfo data = new FacultyInfo
+            if (model != null)
             {
-                Id = model.Id,
-                Name = model.Name,
-                History = model.History,
-                Mission = model.Mission,
-                Vission = model.Vission,
-                Address = model.Address,
-                Phone = model.Phone,
-                FaxNo = model.FaxNo,
-                Email = model.Email,
-                ApplicationUserrId = model.DeanId,
-                DeanMessage = model.DeanMessage
-            };
+                FacultyInfo data = new FacultyInfo
+                {
+                    Id = model.Id,
+                    Name = model.Name,
+                    History = model.History,
+                    Mission = model.Mission,
+                    Vission = model.Vission,
+                    Address = model.Address,
+                    Phone = model.Phone,
+                    FaxNo = model.FaxNo,
+                    Email = model.Email,
+                    ApplicationUserrId = model.DeanId,
+                    DeanMessage = model.DeanMessage
+                };
 
-            _facultyInfo.Update(data);
-            return Ok(data);
+                _facultyInfo.Update(data);
+                return Ok(data);
+            }
+            return NotFound();
         }
 
         [HttpDelete]
         public IHttpActionResult Delete(int id)
         {
-            _facultyInfo.Delete(id);
-            return Ok("Deleted Successfully !");
+            if(id > 0 )
+            {
+                _facultyInfo.Delete(id);
+                return Ok("Deleted Successfully !");
+            }
+            return NotFound();
         }
     }
 }
